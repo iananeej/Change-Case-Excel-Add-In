@@ -48,6 +48,7 @@
             this.CbEnableShortcuts = this.Factory.CreateRibbonCheckBox();
             this.CbFirstItemInContextMenu = this.Factory.CreateRibbonCheckBox();
             this.BtnHideTab = this.Factory.CreateRibbonButton();
+            this.BtnHelp = this.Factory.CreateRibbonButton();
             this.GroupDonate = this.Factory.CreateRibbonGroup();
             this.BtnDonate = this.Factory.CreateRibbonButton();
             this.TabHome = this.Factory.CreateRibbonTab();
@@ -137,6 +138,7 @@
             this.GrpCcSettings.Items.Add(this.CbEnableShortcuts);
             this.GrpCcSettings.Items.Add(this.CbFirstItemInContextMenu);
             this.GrpCcSettings.Items.Add(this.BtnHideTab);
+            this.GrpCcSettings.Items.Add(this.BtnHelp);
             this.GrpCcSettings.Label = "Settings";
             this.GrpCcSettings.Name = "GrpCcSettings";
             this.GrpCcSettings.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.GrpCcSettings_DialogLauncherClick);
@@ -157,9 +159,17 @@
             // 
             this.BtnHideTab.Label = "Hide this tab";
             this.BtnHideTab.Name = "BtnHideTab";
-            this.BtnHideTab.OfficeImageId = "AppointmentColor1";
+            this.BtnHideTab.OfficeImageId = "HideDetails";
             this.BtnHideTab.ShowImage = true;
             this.BtnHideTab.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnHideTab_Click);
+            // 
+            // BtnHelp
+            // 
+            this.BtnHelp.Label = "Help";
+            this.BtnHelp.Name = "BtnHelp";
+            this.BtnHelp.OfficeImageId = "Help";
+            this.BtnHelp.ShowImage = true;
+            this.BtnHelp.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnHelp_Click);
             // 
             // GroupDonate
             // 
@@ -295,6 +305,7 @@
         private Microsoft.Office.Tools.Ribbon.RibbonButton GBtnAlternateCase;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup GroupDonate;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnDonate;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnHelp;
     }
 
     partial class ThisRibbonCollection

@@ -57,6 +57,12 @@ namespace Change_Case_Excel_Add_In_v3
             BtnDonate.SuperTip = AppStrings.DonateButtonSt;
 
             GrpCcSettings.DialogLauncher.SuperTip = AppStrings.SettingsDialogLauncherSt;
+
+            BtnHideTab.ScreenTip = "Hide \'Change Case\' Tab";
+            BtnHideTab.SuperTip = AppStrings.HideTabButtonSt;
+
+            BtnHelp.ScreenTip = "Get Help";
+            BtnHelp.SuperTip = "Visit 'www.aneejian.com' for more help on using the add-in.";
         }
 
         internal void RefreshTabControls()
@@ -127,6 +133,18 @@ namespace Change_Case_Excel_Add_In_v3
                 Process.Start(AppStrings.DonationUrl);
             else
                 MessageBox.Show(Resources.NoInternetConnectionMessage, Resources.WindowTitle);
+        }
+
+        private void BtnHelp_Click(object sender, RibbonControlEventArgs e)
+        {
+            if (InternetConnection.IsConnected())
+            {
+                Process.Start(AppStrings.HelpUrl);
+            }
+            else
+            {
+                MessageBox.Show(Resources.NoInternetConnectionMessage, Resources.WindowTitle);
+            }
         }
     }
 }

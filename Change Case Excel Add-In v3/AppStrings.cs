@@ -23,6 +23,7 @@
         internal const string About = "About";
 
         internal const string DonationUrl = "https://donorbox.org/change-case-excel-add-in-donation";
+        internal const string HelpUrl = "http://github.aneejian.com/Change-Case-Excel-Add-In";
 
         #region Super Tips
         internal const string UpperCaseSt = "Change selected cell(s) content to UPPERCASE.\nExample:\n'Hello Aneejian' to 'HELLO ANEEJIAN'";
@@ -34,7 +35,10 @@
 
         internal const string SettingsDialogLauncherSt = "Click to manage more settings.\nCustomize shortcut keys.\nHide or show Change Case option in Home Tab.";
 
-        internal const string DonateButtonSt = "If you find Change Case Excel Add-In useful, feel free to support us by making a donation!";
+        internal const string DonateButtonSt = "If you find Change Case Excel Add-In useful, support us by making a donation!";
+
+        internal const string HideTabButtonSt =
+            "Click the button if you don't want to display 'Change Case' tab in your Excel application window.\nYou can make the tab visible from cell context menu.";
 
         #endregion
     }

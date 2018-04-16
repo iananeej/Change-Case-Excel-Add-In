@@ -21,6 +21,8 @@ Change Case Excel Add-In is a simple tool that can help you in changing case of 
 + tOGGLE cASE
 + aLtErNaTiNg CaSe
 
+![Change Case option in Home Tab][home_tab]
+
 ## Keyboard Shortcuts
 
 To easily change the case of selected cells this tool provides customizable shortcuts keys. Default key combinations are given below
@@ -57,6 +59,8 @@ Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 4. Right click to launch 'Cell Context Menu' (alternatively, you can use shortcut keys)
 5. Roll over the 'Change Case' option in the menu
 6. Select the relevant option to change the case
+
+![CHANGE CASE tab in Excel Ribbon][tab]
 
 ### Uninstalling
 

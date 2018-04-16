@@ -6,4 +6,4 @@
 2. Extract the archive.
 3. Run setup.exe
 
-### Visit [aneejian.com](www.aneejian.com) for more help
+### Visit [aneejian.com](http://www.aneejian.com) for more help

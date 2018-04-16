@@ -35,7 +35,7 @@
 
         internal const string SettingsDialogLauncherSt = "Click to manage more settings.\nCustomize shortcut keys.\nHide or show Change Case option in Home Tab.";
 
-        internal const string DonateButtonSt = "If you find Change Case Excel Add-In useful, support us by making a donation!";
+        internal const string DonateButtonSt = "If you find Change Case Excel Add-In useful, support Aneejian by making a donation!";
 
         internal const string HideTabButtonSt =
             "Click the button if you don't want to display 'Change Case' tab in your Excel application window.\nYou can make the tab visible from cell context menu.";

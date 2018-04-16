@@ -139,9 +139,15 @@ Do you want to continue?</value>
     <value>Change Case Excel Add-In</value>
   </data>
   <data name="NoInternetConnectionMessage" xml:space="preserve">
-    <value>You are not connected to internet.</value>
+    <value>You are not connected to INTERNET.</value>
   </data>
   <data name="CCIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutBox_AboutBox_About__0_" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
+  <data name="AboutBox_AboutBox_Version__0_" xml:space="preserve">
+    <value>Version {0}</value>
   </data>
 </root>

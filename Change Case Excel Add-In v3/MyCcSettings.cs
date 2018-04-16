@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Change_Case_Excel_Add_In_v3.Properties;
 
@@ -27,7 +23,7 @@ namespace Change_Case_Excel_Add_In_v3
         {
             SetCbItems(GetScArray());
             //setting shortcut values
-            var config = Properties.Settings.Default;
+            var config = Settings.Default;
             CbUc.SelectedItem = config.ScUpperCase;
             CbLc.SelectedItem = config.ScLowerCase;
             CbSc.SelectedItem = config.ScSentenceCase;
@@ -53,7 +49,7 @@ namespace Change_Case_Excel_Add_In_v3
 
 
         //Combo box selection changed event
-        private void CbSelectionChanged(object sender, System.EventArgs e)
+        private void CbSelectionChanged(object sender, EventArgs e)
         {
             SetCbItems(GetScArray(false), true);
         }
@@ -89,7 +85,7 @@ namespace Change_Case_Excel_Add_In_v3
         {
             if (fromSettings)
             {
-                var config = Properties.Settings.Default;
+                var config = Settings.Default;
                 string[] scArray = { config.ScUpperCase, config.ScLowerCase, config.ScSentenceCase, config.ScProperCase, config.ScToggleCase, config.ScAlternateCase };
                 return scArray;
             }
@@ -109,7 +105,7 @@ namespace Change_Case_Excel_Add_In_v3
         {
             ChangeCase.EnableShortCuts(false);
 
-            var config = Properties.Settings.Default;
+            var config = Settings.Default;
             config.enableShortCuts = CbxEnableShortcuts.Checked;
             config.firstItemInContextMenu = CbxFirstInContenxtMenu.Checked;
             config.showChangeCaseOptionInHomeTab = CbxShowInHome.Checked;

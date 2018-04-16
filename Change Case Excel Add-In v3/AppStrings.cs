@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Change_Case_Excel_Add_In_v3
+﻿namespace Change_Case_Excel_Add_In_v3
 {
-    internal class AppStrings
+    internal static class AppStrings
     {
         internal const string ChangeCase = "Change Case";
         internal const string ChangeCaseSt = "Change selected cell(s) content to uppercase, lowercase or other common capitalizations.";
@@ -27,6 +21,8 @@ namespace Change_Case_Excel_Add_In_v3
         internal const string FirstItemInContextMenu = "First item in context menu";
         internal const string Settings = "Settings";
         internal const string About = "About";
+
+        internal const string DonationUrl = "https://donorbox.org/change-case-excel-add-in-donation";
 
         #region Super Tips
         internal const string UpperCaseSt = "Change selected cell(s) content to UPPERCASE.\nExample:\n'Hello Aneejian' to 'HELLO ANEEJIAN'";

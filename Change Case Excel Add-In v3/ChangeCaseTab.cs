@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 using System.Windows.Forms;
 using Change_Case_Excel_Add_In_v3.Properties;
-using Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Tools.Ribbon;
 
 namespace Change_Case_Excel_Add_In_v3
@@ -66,7 +61,7 @@ namespace Change_Case_Excel_Add_In_v3
 
         internal void RefreshTabControls()
         {
-            var config = Properties.Settings.Default;
+            var config = Settings.Default;
             CbEnableShortcuts.Checked = config.enableShortCuts;
             CbFirstItemInContextMenu.Checked = config.firstItemInContextMenu;
             ChangeCase.ShowChangeCaseTabInRibbon(config.showChangeCaseTab);
@@ -129,7 +124,7 @@ namespace Change_Case_Excel_Add_In_v3
         private void BtnDonate_Click(object sender, RibbonControlEventArgs e)
         {
             if (InternetConnection.IsConnected())
-                Process.Start("https://pledgie.com/campaigns/31725");
+                Process.Start(AppStrings.DonationUrl);
             else
                 MessageBox.Show(Resources.NoInternetConnectionMessage, Resources.WindowTitle);
         }

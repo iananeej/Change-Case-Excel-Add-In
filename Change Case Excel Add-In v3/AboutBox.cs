@@ -1,28 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
+﻿using System.Reflection;
 using System.Windows.Forms;
+using Change_Case_Excel_Add_In_v3.Properties;
 
 namespace Change_Case_Excel_Add_In_v3
 {
-    partial class AboutBox : Form
+    internal partial class AboutBox : Form
     {
         public AboutBox()
         {
+            //if (InternetConnection.IsConnected()) Process.Start("http://www.aneejian.com");
             InitializeComponent();
-            this.Text = $"About {AssemblyTitle}";
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = $"Version {AssemblyVersion}";
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
+            Text = string.Format(Resources.AboutBox_AboutBox_About__0_, AssemblyTitle);
+            labelProductName.Text = AssemblyProduct;
+            labelVersion.Text = string.Format(Resources.AboutBox_AboutBox_Version__0_, AssemblyVersion);
+            labelCopyright.Text = AssemblyCopyright;
+            labelCompanyName.Text = AssemblyCompany;
 
-            if (InternetConnection.IsConnected()) Process.Start("http://www.aneejian.com");
+            //
 
+        }
+
+        public sealed override string Text
+        {
+            get => base.Text;
+            set => base.Text = value;
         }
 
         #region Assembly Attribute Accessors

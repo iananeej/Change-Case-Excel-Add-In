@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Change_Case_Excel_Add_In_v3.Properties;
-using Microsoft.Office.Interop.Excel;
 
 namespace Change_Case_Excel_Add_In_v3
 {
-    class KbHook
-
+    internal static class KbHook
     {
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc lpfn, IntPtr hMod,
@@ -21,7 +19,7 @@ namespace Change_Case_Excel_Add_In_v3
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
 
-        public delegate int LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
+        private delegate int LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
 
         private static readonly LowLevelKeyboardProc Proc = HookCallback;
         private static IntPtr _hookId = IntPtr.Zero;
@@ -59,27 +57,27 @@ namespace Change_Case_Excel_Add_In_v3
             var keyDataString = keyData.ToString();
             var shortCutList = new List<string>
             {
-                Properties.Settings.Default.ScUpperCase,
-                Properties.Settings.Default.ScLowerCase,
-                Properties.Settings.Default.ScProperCase,
-                Properties.Settings.Default.ScSentenceCase,
-                Properties.Settings.Default.ScToggleCase,
-                Properties.Settings.Default.ScAlternateCase
+                Settings.Default.ScUpperCase,
+                Settings.Default.ScLowerCase,
+                Settings.Default.ScProperCase,
+                Settings.Default.ScSentenceCase,
+                Settings.Default.ScToggleCase,
+                Settings.Default.ScAlternateCase
             };
             if (!shortCutList.Contains(keyData.ToString())) return (int) CallNextHookEx(_hookId, nCode, wParam, lParam);
             if (!BindingFunctions.IsKeyDown(Keys.ControlKey) || !BindingFunctions.IsKeyDown(Keys.ShiftKey) ||
                 !BindingFunctions.IsKeyDown(keyData)) return (int) CallNextHookEx(_hookId, nCode, wParam, lParam);
-            if (keyDataString == Properties.Settings.Default.ScUpperCase)
+            if (keyDataString == Settings.Default.ScUpperCase)
                 ChangeCase.Cc(AppStrings.UpperCase);
-            else if (keyDataString == Properties.Settings.Default.ScLowerCase)
+            else if (keyDataString == Settings.Default.ScLowerCase)
                 ChangeCase.Cc(AppStrings.LowerCase);
-            else if (keyDataString == Properties.Settings.Default.ScSentenceCase)
+            else if (keyDataString == Settings.Default.ScSentenceCase)
                 ChangeCase.Cc(AppStrings.SentenceCase);
-            else if (keyDataString == Properties.Settings.Default.ScProperCase)
+            else if (keyDataString == Settings.Default.ScProperCase)
                 ChangeCase.Cc(AppStrings.ProperCase);
-            else if (keyDataString == Properties.Settings.Default.ScToggleCase)
+            else if (keyDataString == Settings.Default.ScToggleCase)
                 ChangeCase.Cc(AppStrings.ToggelCase);
-            else if (keyDataString == Properties.Settings.Default.ScAlternateCase)
+            else if (keyDataString == Settings.Default.ScAlternateCase)
                 ChangeCase.Cc(AppStrings.AlternateCase);
             return (int) CallNextHookEx(_hookId, nCode, wParam, lParam);
         }

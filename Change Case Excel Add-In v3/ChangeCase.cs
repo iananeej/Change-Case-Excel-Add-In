@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Net;
-using System.Text;
 using Excel = Microsoft.Office.Interop.Excel;
 using Office = Microsoft.Office.Core;
-using Microsoft.Office.Tools.Excel;
-using System.Windows.Forms;
 
 namespace Change_Case_Excel_Add_In_v3
 {
@@ -40,13 +33,13 @@ namespace Change_Case_Excel_Add_In_v3
         /// </summary>
         private void InternalStartup()
         {
-            this.Startup += new System.EventHandler(ChangeCase_Startup);
-            this.Shutdown += new System.EventHandler(ChangeCase_Shutdown);
+            Startup += new EventHandler(ChangeCase_Startup);
+            Shutdown += new EventHandler(ChangeCase_Shutdown);
         }
 
         #endregion
 
-        private void ChangeCase_Startup(object sender, System.EventArgs e)
+        private void ChangeCase_Startup(object sender, EventArgs e)
         {
             //Adding Sheet Before Right Click event
             var app = Application;
@@ -56,7 +49,7 @@ namespace Change_Case_Excel_Add_In_v3
             EnableShortCuts(Properties.Settings.Default.enableShortCuts);
         }
 
-        private void ChangeCase_Shutdown(object sender, System.EventArgs e)
+        private void ChangeCase_Shutdown(object sender, EventArgs e)
         {
             //Disabling shortcut feature
             EnableShortCuts(false);
@@ -319,14 +312,29 @@ namespace Change_Case_Excel_Add_In_v3
 
         public static void ShowChangeCaseTabInRibbon(bool show)
         {
-            Globals.Ribbons.ChangeCaseTab.TabChangeCase.Visible = show;
+            try
+            {
+                Globals.Ribbons.ChangeCaseTab.TabChangeCase.Visible = show;
+            }
+            catch
+            {
+                // ignore
+            }
             Properties.Settings.Default.showChangeCaseTab = show;
             Properties.Settings.Default.Save();
         }
 
         public static void ShowChangeCaseOptionInHomeTab(bool show)
         {
-            Globals.Ribbons.ChangeCaseTab.GroupCcInHome.Visible = show;
+            try
+            {
+                Globals.Ribbons.ChangeCaseTab.GroupCcInHome.Visible = show;
+            }
+            catch
+            {
+                // ignore
+            }
+            
             Properties.Settings.Default.showChangeCaseOptionInHomeTab = show;
             Properties.Settings.Default.Save();
         }
@@ -335,7 +343,16 @@ namespace Change_Case_Excel_Add_In_v3
         {
             Properties.Settings.Default.enableShortCuts = enable;
             Properties.Settings.Default.Save();
-            Globals.Ribbons.ChangeCaseTab.CbEnableShortcuts.Checked = enable;
+            try
+            {
+                Globals.Ribbons.ChangeCaseTab.CbEnableShortcuts.Checked = enable;
+            }
+            catch
+            {
+                // ignore
+            }
+
+            
             EnableShortCuts(enable);
         }
 
@@ -343,7 +360,17 @@ namespace Change_Case_Excel_Add_In_v3
         {
             Properties.Settings.Default.firstItemInContextMenu = enable;
             Properties.Settings.Default.Save();
-            Globals.Ribbons.ChangeCaseTab.CbFirstItemInContextMenu.Checked = enable;
+
+            try
+            {
+                Globals.Ribbons.ChangeCaseTab.CbFirstItemInContextMenu.Checked = enable;
+            }
+            catch
+            {
+                // ignore
+            }
+
+            
         }
 
         #region Change Case Functions

@@ -19,7 +19,7 @@ namespace Change_Case_Excel_Add_In_v3.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,6 +61,24 @@ namespace Change_Case_Excel_Add_In_v3.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About {0}.
+        /// </summary>
+        internal static string AboutBox_AboutBox_About__0_ {
+            get {
+                return ResourceManager.GetString("AboutBox_AboutBox_About__0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version {0}.
+        /// </summary>
+        internal static string AboutBox_AboutBox_Version__0_ {
+            get {
+                return ResourceManager.GetString("AboutBox_AboutBox_Version__0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon CCIcon {
@@ -92,7 +110,7 @@ namespace Change_Case_Excel_Add_In_v3.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are not connected to internet..
+        ///   Looks up a localized string similar to You are not connected to INTERNET..
         /// </summary>
         internal static string NoInternetConnectionMessage {
             get {

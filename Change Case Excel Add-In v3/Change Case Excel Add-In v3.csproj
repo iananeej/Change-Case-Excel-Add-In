@@ -37,7 +37,7 @@
     <OldToolsVersion>14.0</OldToolsVersion>
     <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>C:\My Files\Tool Development\Change Case Excel Add-In v3\Publish\</PublishUrl>
+    <PublishUrl>C:\My Files\GitHub\Change-Case-Excel-Add-In\Change Case Excel Add-In v3\publish\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
     <ApplicationVersion>3.0.0.0</ApplicationVersion>

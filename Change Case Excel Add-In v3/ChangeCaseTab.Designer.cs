@@ -37,22 +37,22 @@
             Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
             this.TabChangeCase = this.Factory.CreateRibbonTab();
             this.GrpCc = this.Factory.CreateRibbonGroup();
-            this.UpperCase = this.Factory.CreateRibbonButton();
-            this.LowerCase = this.Factory.CreateRibbonButton();
-            this.SentenceCase = this.Factory.CreateRibbonButton();
             this.separator1 = this.Factory.CreateRibbonSeparator();
-            this.ProperCase = this.Factory.CreateRibbonButton();
-            this.ToggleCase = this.Factory.CreateRibbonButton();
-            this.AlternateCase = this.Factory.CreateRibbonButton();
             this.GrpCcSettings = this.Factory.CreateRibbonGroup();
             this.CbEnableShortcuts = this.Factory.CreateRibbonCheckBox();
             this.CbFirstItemInContextMenu = this.Factory.CreateRibbonCheckBox();
-            this.BtnHideTab = this.Factory.CreateRibbonButton();
-            this.BtnHelp = this.Factory.CreateRibbonButton();
             this.GroupDonate = this.Factory.CreateRibbonGroup();
-            this.BtnDonate = this.Factory.CreateRibbonButton();
             this.TabHome = this.Factory.CreateRibbonTab();
             this.GroupCcInHome = this.Factory.CreateRibbonGroup();
+            this.UpperCase = this.Factory.CreateRibbonButton();
+            this.LowerCase = this.Factory.CreateRibbonButton();
+            this.SentenceCase = this.Factory.CreateRibbonButton();
+            this.ProperCase = this.Factory.CreateRibbonButton();
+            this.ToggleCase = this.Factory.CreateRibbonButton();
+            this.AlternateCase = this.Factory.CreateRibbonButton();
+            this.BtnHideTab = this.Factory.CreateRibbonButton();
+            this.BtnHelp = this.Factory.CreateRibbonButton();
+            this.BtnDonate = this.Factory.CreateRibbonButton();
             this.GalleryChangeCase = this.Factory.CreateRibbonGallery();
             this.GBtnUpperCase = this.Factory.CreateRibbonButton();
             this.GBtnLowerCase = this.Factory.CreateRibbonButton();
@@ -74,7 +74,7 @@
             this.TabChangeCase.Groups.Add(this.GrpCc);
             this.TabChangeCase.Groups.Add(this.GrpCcSettings);
             this.TabChangeCase.Groups.Add(this.GroupDonate);
-            this.TabChangeCase.Label = "Change Case";
+            this.TabChangeCase.Label = "CHANGE CASE";
             this.TabChangeCase.Name = "TabChangeCase";
             // 
             // GrpCc
@@ -88,6 +88,54 @@
             this.GrpCc.Items.Add(this.AlternateCase);
             this.GrpCc.Label = "Change Case";
             this.GrpCc.Name = "GrpCc";
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
+            // 
+            // GrpCcSettings
+            // 
+            ribbonDialogLauncherImpl1.ScreenTip = "More Settings";
+            ribbonDialogLauncherImpl1.SuperTip = "Click to launch more settings.";
+            this.GrpCcSettings.DialogLauncher = ribbonDialogLauncherImpl1;
+            this.GrpCcSettings.Items.Add(this.CbEnableShortcuts);
+            this.GrpCcSettings.Items.Add(this.CbFirstItemInContextMenu);
+            this.GrpCcSettings.Items.Add(this.BtnHideTab);
+            this.GrpCcSettings.Label = "Settings";
+            this.GrpCcSettings.Name = "GrpCcSettings";
+            this.GrpCcSettings.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.GrpCcSettings_DialogLauncherClick);
+            // 
+            // CbEnableShortcuts
+            // 
+            this.CbEnableShortcuts.Label = "Enable Shortcuts";
+            this.CbEnableShortcuts.Name = "CbEnableShortcuts";
+            this.CbEnableShortcuts.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CbEnableShortcuts_Click);
+            // 
+            // CbFirstItemInContextMenu
+            // 
+            this.CbFirstItemInContextMenu.Label = "First in context menu";
+            this.CbFirstItemInContextMenu.Name = "CbFirstItemInContextMenu";
+            this.CbFirstItemInContextMenu.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CbFirst_Click);
+            // 
+            // GroupDonate
+            // 
+            this.GroupDonate.Items.Add(this.BtnHelp);
+            this.GroupDonate.Items.Add(this.BtnDonate);
+            this.GroupDonate.Name = "GroupDonate";
+            // 
+            // TabHome
+            // 
+            this.TabHome.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
+            this.TabHome.ControlId.OfficeId = "TabHome";
+            this.TabHome.Groups.Add(this.GroupCcInHome);
+            this.TabHome.Label = "TabHome";
+            this.TabHome.Name = "TabHome";
+            // 
+            // GroupCcInHome
+            // 
+            this.GroupCcInHome.Items.Add(this.GalleryChangeCase);
+            this.GroupCcInHome.Name = "GroupCcInHome";
+            this.GroupCcInHome.Position = this.Factory.RibbonPosition.AfterOfficeId("GroupFont");
             // 
             // UpperCase
             // 
@@ -108,10 +156,6 @@
             this.SentenceCase.Name = "SentenceCase";
             this.SentenceCase.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SentenceCase_Click);
             // 
-            // separator1
-            // 
-            this.separator1.Name = "separator1";
-            // 
             // ProperCase
             // 
             this.ProperCase.Label = "Capitalize Each Word";
@@ -130,36 +174,11 @@
             this.AlternateCase.Name = "AlternateCase";
             this.AlternateCase.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.AlternateCase_Click);
             // 
-            // GrpCcSettings
-            // 
-            ribbonDialogLauncherImpl1.ScreenTip = "More Settings";
-            ribbonDialogLauncherImpl1.SuperTip = "Click to launch more settings.";
-            this.GrpCcSettings.DialogLauncher = ribbonDialogLauncherImpl1;
-            this.GrpCcSettings.Items.Add(this.CbEnableShortcuts);
-            this.GrpCcSettings.Items.Add(this.CbFirstItemInContextMenu);
-            this.GrpCcSettings.Items.Add(this.BtnHideTab);
-            this.GrpCcSettings.Items.Add(this.BtnHelp);
-            this.GrpCcSettings.Label = "Settings";
-            this.GrpCcSettings.Name = "GrpCcSettings";
-            this.GrpCcSettings.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.GrpCcSettings_DialogLauncherClick);
-            // 
-            // CbEnableShortcuts
-            // 
-            this.CbEnableShortcuts.Label = "Enable Shortcuts";
-            this.CbEnableShortcuts.Name = "CbEnableShortcuts";
-            this.CbEnableShortcuts.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CbEnableShortcuts_Click);
-            // 
-            // CbFirstItemInContextMenu
-            // 
-            this.CbFirstItemInContextMenu.Label = "First in context menu";
-            this.CbFirstItemInContextMenu.Name = "CbFirstItemInContextMenu";
-            this.CbFirstItemInContextMenu.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CbFirst_Click);
-            // 
             // BtnHideTab
             // 
             this.BtnHideTab.Label = "Hide this tab";
             this.BtnHideTab.Name = "BtnHideTab";
-            this.BtnHideTab.OfficeImageId = "HideDetails";
+            this.BtnHideTab.OfficeImageId = "Delete";
             this.BtnHideTab.ShowImage = true;
             this.BtnHideTab.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnHideTab_Click);
             // 
@@ -167,37 +186,17 @@
             // 
             this.BtnHelp.Label = "Help";
             this.BtnHelp.Name = "BtnHelp";
-            this.BtnHelp.OfficeImageId = "Help";
+            this.BtnHelp.OfficeImageId = "FunctionsLogicalInsertGallery";
             this.BtnHelp.ShowImage = true;
             this.BtnHelp.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnHelp_Click);
             // 
-            // GroupDonate
-            // 
-            this.GroupDonate.Items.Add(this.BtnDonate);
-            this.GroupDonate.Name = "GroupDonate";
-            // 
             // BtnDonate
             // 
-            this.BtnDonate.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
             this.BtnDonate.Label = "Donate";
             this.BtnDonate.Name = "BtnDonate";
             this.BtnDonate.OfficeImageId = "AccountingFormat";
             this.BtnDonate.ShowImage = true;
             this.BtnDonate.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnDonate_Click);
-            // 
-            // TabHome
-            // 
-            this.TabHome.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.TabHome.ControlId.OfficeId = "TabHome";
-            this.TabHome.Groups.Add(this.GroupCcInHome);
-            this.TabHome.Label = "TabHome";
-            this.TabHome.Name = "TabHome";
-            // 
-            // GroupCcInHome
-            // 
-            this.GroupCcInHome.Items.Add(this.GalleryChangeCase);
-            this.GroupCcInHome.Name = "GroupCcInHome";
-            this.GroupCcInHome.Position = this.Factory.RibbonPosition.AfterOfficeId("GroupFont");
             // 
             // GalleryChangeCase
             // 

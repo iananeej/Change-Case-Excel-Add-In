@@ -2,48 +2,62 @@
 
 Change Case Excel Add-In is a simple tool that can help you in changing case of the selected cells in Excel.
 
-## This Add-In has the following features
+![Context Menu][context_menu]
 
-+ Change case of selected cells to ‘UPPER CASE’
-+ Change case of selected cells to ‘lower case’
-+ Change case of selected cells to ‘Proper Case’
-+ Change case of selected cells to ‘Sentence case’
-+ Change case of selected cells to ‘tOgGlE cAsE’
-+ Customizable shortcut keys to perform change case actions
+## Installing the Add-In
+
+1. Download [ccea.rar](Downloads/ccea.rar?raw=true "Download RAR Archive") or [ccea.zip](Downloads/ccea.zip?raw=true "Download ZIP Archive").
+2. Extract the archive.
+3. Run setup.exe
+
+## Features
+
+### Add-In can change case of selected cells to
+
++ UPPER CASE
++ lower case
++ Sentence Case
++ Capitalize Each Word
++ tOGGLE cASE
++ aLtErNaTiNg CaSe
+
+## Keyboard Shortcuts
 
 To easily change the case of selected cells this tool provides customizable shortcuts keys. Default key combinations are given below
 
-+ Ctrl + Shift + U for ‘UPPER CASE’
-+ Ctrl + Shift + L for ‘lower case’
-+ Ctrl + Shift + P for ‘Proper Case’
-+ Ctrl + Shift + S for ‘Sentence case’
-+ Ctrl + Shift + T for ‘tOgGlE cAsE’
+### Default Keyboard Shortcuts
 
-In case you are not interested in using the default key combinations, you can always customize it to suit your comfort. You have comfort to disable shortcuts too.
++ Ctrl + Shift + U for 'UPPER CASE'
++ Ctrl + Shift + L for 'lower case'
++ Ctrl + Shift + S for 'Sentence Case'
++ Ctrl + Shift + C for 'Capitalize Each Word'
++ Ctrl + Shift + T for 'tOGGLE cASE'
++ Ctrl + Shift + T for 'aLtErNaTiNg CaSe'
 
-## How to install the Add-In?
+### Customize or Disable Keyboard Shortcuts
 
-1. Download the setup.
-2. Run the setup.
-3. You may need to install some prerequisites in order to complete the installation. These files will get automatically installed, provided you are connected to internet.
+Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 
-Uninstalling
-You can uninstall the Add-In from ‘Add or Remove Programs’ options available from control panel. While uninstalling, make sure that all Excel files are closed.
+### Managing Shortcuts
+
+1. Open an Excel file
+2. Right click on a cell
+3. Roll over the 'Change Case' option in the menu
+4. Select the option 'Settings'
+5. In the settings menu you can change the default shortcuts
+6. From the context menu or the settings window you can enable or disable shortcuts
 
 ## Using the Add-In
 
 1. Install the Add-In
 2. Open an Excel file
 3. Select the cells whose case need to be changed
-4. Right click to launch ‘Cell Context Menu’ (alternatively, you can use shortcut keys)
-5. Roll over the ‘Change Case’ option in the menu
+4. Right click to launch 'Cell Context Menu' (alternatively, you can use shortcut keys)
+5. Roll over the 'Change Case' option in the menu
 6. Select the relevant option to change the case
 
-## Managing Shortcuts
+### Uninstalling
 
-1. Open an Excel file
-2. Right click on a cell
-3. Roll over the ‘Change Case’ option in the menu
-4. Select the option ‘Settings’
-5. In the settings menu you can change the default shortcuts
-6. From the context menu or the settings window you can enable or disable shortcuts
+You can uninstall the Add-In from 'Add or Remove Programs' options available from control panel. While uninstalling, make sure that all Excel files are closed.
+
+[context_menu]: /images/context_menu.png "Context Menu"

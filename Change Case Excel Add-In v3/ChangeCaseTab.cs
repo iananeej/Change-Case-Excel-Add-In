@@ -146,5 +146,6 @@ namespace Change_Case_Excel_Add_In_v3
                 MessageBox.Show(Resources.NoInternetConnectionMessage, Resources.WindowTitle);
             }
         }
+
     }
 }

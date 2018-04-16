@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Change Case Excel Add-In v3.dll" version="3.0.0.0" publicKeyToken="0f8b4de8f694f93a" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">Add-in to change selected cell(s) content to UPPERCASE, lowercase or other common capitalizations.
+www.aneejian.com</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="mscorlib" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationCore" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Drawing" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Windows.Forms" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xaml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Change Case Excel Add-In v3.dll" size="528384">
+      <assemblyIdentity name="Change Case Excel Add-In v3" version="3.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jHvsQvDsZPtJTQML/VpBhpYiS/7opRLM+L3LkNVWaRc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.dll" size="16048">
+      <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vgvc0uYwZVUc7LUY2JZ9KAzZj7xIADwUKXmP0lBdgwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.dll" size="92344">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9ksp+/YUo4Q2xUje3aOMuS2A+gI7SsBRbCG78UDZKa4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jLCTF8Mm6bD4PDN+rnzN6q0+ReXaNgPh68kMWgatFwI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Excel.dll" size="172216">
+      <assemblyIdentity name="Microsoft.Office.Tools.Excel" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C1kJF384lnmyooijH4sKbV7OfgR/gae6sw3kAG/bOyg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Tools.Applications.Runtime.dll" size="83168">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vDNwPlxZTsrepY5kiLFDjUnvE55xbfsf7N7uzyD0qzo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Change Case Excel Add-In v3.dll.config" size="2145">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vWl5zpmANU1tZBLc1nEC+J5WU0Jw0g8oOOhki4mmep4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="Change_Case_Excel_Add_In_v3.ChangeCase">
+          <assemblyIdentity name="Change Case Excel Add-In v3" version="3.0.0.0" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="true">
+      <vstav3:expiration maximumAge="7" unit="days" />
+    </vstav3:update>
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Excel" loadBehavior="3" keyName="Change Case Excel Add-In v3">
+            <vstov4:friendlyName>Change Case Excel Add-In</vstov4:friendlyName>
+            <vstov4:description>Add-in to change selected cell(s) content to UPPERCASE, lowercase or other common capitalizations.
+www.aneejian.com</vstov4:description>
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1">
+              <vstov4.1:ribbonType name="Change_Case_Excel_Add_In_v3.ChangeCaseTab, Change Case Excel Add-In v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </vstov4.1:ribbonTypes>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=Aneejian" issuerKeyHash="95531c3d5a84615b39a4d62fe6ac5ef9e166189b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yQtzFX8hubOLg5Fxx1IbsD26X4w=</DigestValue></Reference></SignedInfo><SignatureValue>FLpo/2axGUlSizGkjCcWplucN2SthpGVfrdudvQYxubt6kah+4sZhpmmHcca2jZca5bYB7hmqCls5TUOWbhAbSqLUTiVrVkBCPywzlFlucXqf8+w+FOLaoNlRrqkZJpLqCZOo9MiTyza8nvMPaPw4YB5klnfmQQPRjqx4DrlAwO9DzU8cXNDnAqdi19r8QH0AKPHvPXoKBdLJNddMOHJoIbagXSAr4XXIOJ/oh7WrlK6l+wZh1r9wgCgCTcX/Ztln8yOGNN7okXavxJAAeYsiQBZJW1bGrAxUoMtpsKyvw7MxwxT6WaWFo7vuwh6UUo/NczhTowUzhihVbjC6FaZxQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r6DRjDBPxRRbxlKLYA1D8162VFMwmTVsRXDGC82tobbzeFRr2/cB22FXmdTVGH/1VEe+CQh625oOsZeRw7Vu/OWY1lUXno9DjrAjMGVag7BTVUAFp1Y+XdOyyzGXeL7oPJOZgajfDrkDbUuOCv84ehd1tENrkFkAJPu9vclwUZ0Xlk4L18MfSzLa05tHLluSBQ/nH4OzSSvBZ8BZ0+zXqzQqSRgNZoUd7mvr9Panj3BTuDKhiH9qTX+65KQO4P9VdFGisPITiBjtzGMBkM1BcSMz7JHP8zjsy94vfRUx6kw+MOgkgiKfRq47V85Lh9OH+xiJf+MQf3igCALMSosPQQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8c5fba3db01b52c77191838bb3b9217f15730bc9" Description="" Url=""><as:assemblyIdentity name="Change Case Excel Add-In v3.dll" version="3.0.0.0" publicKeyToken="0f8b4de8f694f93a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Aneejian</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vHfzQc+tOYYSxhbG80v2dpMIYV8=</DigestValue></Reference></SignedInfo><SignatureValue>GDXa3nKciDSsZ7Fn5UrUnxKZfygb8jo/GndvNLqgo77vaa+G2UhhpgJ8z1kC+azR74bJ8HCTGHARrYUKYM+AxY9THlhZIrxtdRk6+TyHSuzLSEO0Jx6PHOaJGroV2tvbnDaW9DPEU3scUt4+aelUmSnc9OKdOv/K0fZBjqpQfxBA9jId/COLD3rLwkHg8BpBP1iu8oX1wA5CW/cVpv36j1c0oSPPhhawDOtTeUFYG+2aATwp2mhp1ZH0kvIQ0Gj5BJsvA+LMa5Msw+fB6CD/+RJpZeyZYEIKr8dBacXObD/nqza4nExgP8wPtDelFDQoYk+QIaouAF35cOIaOH3F0A==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r6DRjDBPxRRbxlKLYA1D8162VFMwmTVsRXDGC82tobbzeFRr2/cB22FXmdTVGH/1VEe+CQh625oOsZeRw7Vu/OWY1lUXno9DjrAjMGVag7BTVUAFp1Y+XdOyyzGXeL7oPJOZgajfDrkDbUuOCv84ehd1tENrkFkAJPu9vclwUZ0Xlk4L18MfSzLa05tHLluSBQ/nH4OzSSvBZ8BZ0+zXqzQqSRgNZoUd7mvr9Panj3BTuDKhiH9qTX+65KQO4P9VdFGisPITiBjtzGMBkM1BcSMz7JHP8zjsy94vfRUx6kw+MOgkgiKfRq47V85Lh9OH+xiJf+MQf3igCALMSosPQQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDDzCCAfegAwIBAgIQE7el1x5br61EbAmrTl7igTANBgkqhkiG9w0BAQUFADATMREwDwYDVQQDDAhBbmVlamlhbjAeFw0xODA0MTUwOTMxMzVaFw0xOTA0MTUwOTUxMzVaMBMxETAPBgNVBAMMCEFuZWVqaWFuMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DRjDBPxRRbxlKLYA1D8162VFMwmTVsRXDGC82tobbzeFRr2/cB22FXmdTVGH/1VEe+CQh625oOsZeRw7Vu/OWY1lUXno9DjrAjMGVag7BTVUAFp1Y+XdOyyzGXeL7oPJOZgajfDrkDbUuOCv84ehd1tENrkFkAJPu9vclwUZ0Xlk4L18MfSzLa05tHLluSBQ/nH4OzSSvBZ8BZ0+zXqzQqSRgNZoUd7mvr9Panj3BTuDKhiH9qTX+65KQO4P9VdFGisPITiBjtzGMBkM1BcSMz7JHP8zjsy94vfRUx6kw+MOgkgiKfRq47V85Lh9OH+xiJf+MQf3igCALMSosPQQIDAQABo18wXTAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUHAwMwFwYDVR0RBBAwDoIMYW5lZWppYW4uY29tMB0GA1UdDgQWBBSVUxw9WoRhWzmk1i/mrF754WYYmzANBgkqhkiG9w0BAQUFAAOCAQEAR/6JMJbhqiVoPDd59mMOSIm9PIuNm9wlwckmjsBTsC7oFqOC0KCPu3M8fGKA8CQlCiWxnNW68+PJlaGA5oZ6hPLd3Aw/XnHKwuRA9j8kvJXdGydduowfHuUdkTR04WqG/kELP0K49W06SG+lyMxn45YIAqOE2pC5jzF6rXpVyvLg77gv8Fgc/ESdZUwCKup+BJtQjUHaBFHGZHWQuMTRST3SUFsAUXZ/EF3szTzEDkWFTbQNnuv5d//uxv0si1o84UIHr2UhZY3o5sE/6EeVUsH0V2iT5JIDtXqJP2NNJf4jjfHTT6Vb1gM/nspXIWjm5HvP3tcCczz0UwpnXgLWmQ==</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIIIDwYJKoZIhvcNAQcCoIIIADCCB/wCAQExCzAJBgUrDgMCGgUAMIIBEwYJKoZI
+hvcNAQcBoIIBBASCAQAYNdrecpyINKxnsWflStSfEpl/KBvyOj8ad280uqCjvu9p
+r4bZSGGmAnzPWQL5rNHvhsnwcJMYcBGthQpgz4DFj1MeWFkivG11GTr5PIdK7MtI
+Q7QnHo8c5okauhXa29ucNpb0M8RTexxS3j5p6VSZKdz04p06/8rR9kGOqlB/EED2
+Mh38I4sPesvCQeDwGkE/WK7yhfXADkJb9xWm/fqPVzShI8+GFrAM61N5QVgb7ZoB
+PCnaaGnVkfSS8hDQaPkEmy8D4sxrkyzD58HoIP/5Emll7JlgQgqvx0Fpxc5sP+er
+NricTGA/zA+0N6UUNChiT5Ahqi4AXflw4ho4fcXQoIIEnTCCBJkwggOBoAMCAQIC
+DxaI8DklXmOOaRQ5B+YzCzANBgkqhkiG9w0BAQUFADCBlTELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAlVUMRcwFQYDVQQHEw5TYWx0IExha2UgQ2l0eTEeMBwGA1UEChMV
+VGhlIFVTRVJUUlVTVCBOZXR3b3JrMSEwHwYDVQQLExhodHRwOi8vd3d3LnVzZXJ0
+cnVzdC5jb20xHTAbBgNVBAMTFFVUTi1VU0VSRmlyc3QtT2JqZWN0MB4XDTE1MTIz
+MTAwMDAwMFoXDTE5MDcwOTE4NDAzNlowgYQxCzAJBgNVBAYTAkdCMRswGQYDVQQI
+ExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoT
+EUNPTU9ETyBDQSBMaW1pdGVkMSowKAYDVQQDEyFDT01PRE8gU0hBLTEgVGltZSBT
+dGFtcGluZyBTaWduZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDp
+6T3f1zcIyR44slJTQm0i8bHEBgRrnv2CdFBDfcagux9O+QJxJrHvQ9iDjEj85w+X
+eprrnN6mow47HEQYdY54pRdp/kkYpOK7XE7+jipUelDw1fbMkeeZedfeeZTXljP+
+DoO+Ir9jFiyj3Sgbrz2r6pfS8b8EEOc9SEX9H2hlwX9ZmWnAIjEMYm6nXGUBIbBj
+xCIYJ+7m/NIAPUcuqLiGVl0E3BMXJW4c30QPFc2326VXdkJvAGiCmdLjwd7wi5RX
+TOwIkCIhziIrmAxC5kKTlJiT7/0G2T+8W5tUPCCx7mrWR3rFq4DpMJre8aQ/VU0K
+CTSKdSnSaa2XD1C/+MoJAgMBAAGjgfQwgfEwHwYDVR0jBBgwFoAU2u1kdBScFDyr
+3ZmpvVsoTYs8ydgwHQYDVR0OBBYEFI5rLTNr9DOnk7MTmqXgCvcSNWqIMA4GA1Ud
+DwEB/wQEAwIGwDAMBgNVHRMBAf8EAjAAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMI
+MEIGA1UdHwQ7MDkwN6A1oDOGMWh0dHA6Ly9jcmwudXNlcnRydXN0LmNvbS9VVE4t
+VVNFUkZpcnN0LU9iamVjdC5jcmwwNQYIKwYBBQUHAQEEKTAnMCUGCCsGAQUFBzAB
+hhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMA0GCSqGSIb3DQEBBQUAA4IBAQC6
+MyRAQIx821ifs2CYsvXAMf7rH25Q9grg5OaBrSaHot/9s9r0c/MA+ykbiRsVPttr
+UpMrxKw5gdc8Z1eaOTbgKAia4zlPm4kJf3vFYX9ZiTIlCmquGj7woieotsO4h/cW
+BEhBPVzY7J9NIDEE2WWh7c1pB1MWPd02AgqI60DlBjALuBZL3O+8VQn/xj4SLnaz
+3M5C7/l2V+G3CgVAmFiaXXEWk3GMZYHqb/OJ9/tzrbTnv9mOb6oLTyXzuOHV3XWY
+aIH4qsDRgMLExDmJwfbJnmzXdPnZl/hPwpoKzV6P+Bnp4KWfxPCSIeYteSXJIvnD
+8DqEV606FvRjlBAdXdDGMYICMDCCAiwCAQEwgakwgZUxCzAJBgNVBAYTAlVTMQsw
+CQYDVQQIEwJVVDEXMBUGA1UEBxMOU2FsdCBMYWtlIENpdHkxHjAcBgNVBAoTFVRo
+ZSBVU0VSVFJVU1QgTmV0d29yazEhMB8GA1UECxMYaHR0cDovL3d3dy51c2VydHJ1
+c3QuY29tMR0wGwYDVQQDExRVVE4tVVNFUkZpcnN0LU9iamVjdAIPFojwOSVeY45p
+FDkH5jMLMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwG
+CSqGSIb3DQEJBTEPFw0xODA0MTYxMDAzMjlaMCMGCSqGSIb3DQEJBDEWBBSTiDDK
+mSvm6CHf5z6gcMlyQop9rDANBgkqhkiG9w0BAQEFAASCAQCZfvgv7tYQqwqF+5wI
+4hA/teQ4IhsE04fcPwIIkkwkN0tnbGDDSEr8v8Mm+MBJmBL3KUp7+xexMRBq+3tq
+CtjgfgXMSOT24eFZl7IPCz0LbO4x0TPnhVV3XJrpwJcrkNl/S/ftkwQAhUX9r0ns
+EVoHNZW/iLT0bC2YAL4kLoJJ3bAkjbWLN6TyrpYCv6hNJqj7kgAT/yxXSFqE2WH+
+54T9PX1SRZZItsqc1CSO8f9UyrIhaoP2SLZ5MaldgtOdEAqGwLh1qbhd/08nJw5o
+J19ktcjxK+AjW775hGDc91ok+UHVkuT9oG8CJ7H9qeZ5js+3mfzm+XN/LzXp7giS
+4zpU
+</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

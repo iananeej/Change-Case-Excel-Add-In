@@ -38,6 +38,8 @@ To easily change the case of selected cells this tool provides customizable shor
 
 Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 
+![Settings Menu][settings]
+
 ### Managing Shortcuts
 
 1. Open an Excel file
@@ -61,3 +63,6 @@ Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 You can uninstall the Add-In from 'Add or Remove Programs' options available from control panel. While uninstalling, make sure that all Excel files are closed.
 
 [context_menu]: /images/context_menu.png "Context Menu"
+[home_tab]: /images/home_tab.png "Change Case Option in Home Tab of Excel Ribbon"
+[tab]: /images/tab.png "Change Case Tab in Excel Ribbon"
+[settings]: /images/settings.png "Settings Window"

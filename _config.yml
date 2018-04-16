@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+title: Change Case Excel Add-In
+description: Excel Add-In to change case of selected cells.
+logo: https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotexth.svg
+show_downloads: true
+google_analytics: UA-63183739-1

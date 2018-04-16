@@ -62,7 +62,7 @@ Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 
 ![CHANGE CASE tab in Excel Ribbon][tab]
 
-### Uninstalling
+## Uninstalling
 
 You can uninstall the Add-In from 'Add or Remove Programs' options available from control panel. While uninstalling, make sure that all Excel files are closed.
 

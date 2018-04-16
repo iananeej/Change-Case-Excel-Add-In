@@ -6,7 +6,7 @@ Change Case Excel Add-In is a simple tool that can help you in changing case of 
 
 ## Installing the Add-In
 
-1. Download [ccea.rar](Downloads/ccea.rar?raw=true "Download RAR Archive") or [ccea.zip](Downloads/ccea.zip?raw=true "Download ZIP Archive").
+1. Download [change_case_excel_addin.rar](Downloads/change_case_excel_addin.rar?raw=true "Download RAR Archive") or [change_case_excel_addin.zip](Downloads/change_case_excel_addin.zip?raw=true "Download ZIP Archive").
 2. Extract the archive.
 3. Run setup.exe
 

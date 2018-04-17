@@ -357,7 +357,7 @@ img
 /* start contact */
 #contact
     {
-        background: url('../images/contact-bg.jpg') no-repeat;
+        /* background: url('../images/context_menu-min.png') no-repeat; */
         background-size: cover;
         color: #fff;
     }
@@ -455,3 +455,12 @@ footer
         }
 }
 /* end media 360 */
+/* start list style */
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+/* end list style */

@@ -5,7 +5,7 @@ $(window).load(function(){
 
 $('#blog').onclick = function () {
     location.href = "https://www.aneejian.com";
-};
+};  
 
 $(function() {
     new WOW().init();
@@ -19,3 +19,14 @@ $(function() {
         $(".navbar-collapse").collapse('hide');
     });
 })
+
+function changePage(event) {
+    if($(event.target).hasClass('external')) {
+        window.location.href = $(event.target).attr('href');
+        return;
+    }
+    //...
+}
+$(function () {
+    $('.nav li').click(changePage);
+})  

@@ -472,3 +472,8 @@ footer
         list-style-type: none;
     }
 /* end list style */
+
+#brandAneejian img{
+    max-width: 8em;
+    margin-top: .5em;
+}

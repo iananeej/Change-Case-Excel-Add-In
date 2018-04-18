@@ -10,7 +10,6 @@ body
     {
         background: #fff;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
         position: relative;
         width: 100%;
         height: 100%;
@@ -216,10 +215,13 @@ img
     }
 /* end divider */
 
+.stripe {
+    background: #f8f8f8;
+}
+
 /* start feature */
 #feature
-    {
-        background: #f8f8f8;
+    {        
         padding-top: 80px;
         padding-bottom: 80px;
     }
@@ -246,20 +248,24 @@ img
 /* end feature */
 
 /* start feature1 */
-#feature1
+#feature1,
+#feature2
     {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-#feature1 p
+#feature1 p,
+#feature1 p,
     {
         padding-top: 10px;
     }
-#feature1 span
+#feature1 span,
+#feature2 span
     {
         float: left;
     }
-#feature1 .fa
+#feature1 .fa,
+#feature2 .fa
     {
         background: #28a7e9;
         border-radius: 50%;
@@ -336,19 +342,21 @@ img
 /* end pricing */
 
 /* start download */
+#github,
 #download
     {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+#github h2,
 #download h2
     {
         padding-bottom: 20px;
     }
+
+#github .btn,
 #download .btn
     {
-        border-radius: 0px;
-        font-weight: bold;
         margin-top: 20px;
         padding: 10px 40px 10px 40px;
     }

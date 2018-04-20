@@ -36,28 +36,33 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>14.0</OldToolsVersion>
     <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+    <TargetFrameworkProfile />
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>C:\My Files\GitHub\Change-Case-Excel-Add-In\Change Case Excel Add-In v3\publish\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
     <ApplicationVersion>3.0.0.0</ApplicationVersion>
-    <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
     <ProductName>Change Case Excel Add-In</ProductName>
     <PublisherName>Aneejian</PublisherName>
-    <SupportUrl>http://www.aneejian.com</SupportUrl>
+    <SupportUrl>https://aneejian.github.io/Change-Case-Excel-Add-In/</SupportUrl>
     <FriendlyName>Change Case Excel Add-In</FriendlyName>
     <OfficeApplicationDescription>Add-in to change selected cell%28s%29 content to UPPERCASE, lowercase or other common capitalizations. 
 www.aneejian.com</OfficeApplicationDescription>
     <LoadBehavior>3</LoadBehavior>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

@@ -27,7 +27,7 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>Change_Case_Excel_Add_In_v3</RootNamespace>
     <AssemblyName>Change Case Excel Add-In v3</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <FileUpgradeFlags>
@@ -49,9 +49,10 @@
     <PublisherName>Aneejian</PublisherName>
     <SupportUrl>http://www.aneejian.com</SupportUrl>
     <FriendlyName>Change Case Excel Add-In</FriendlyName>
-    <OfficeApplicationDescription>Add-in to change selected cell%28s%29 content to UPPERCASE, lowercase or other common capitalizations.
+    <OfficeApplicationDescription>Add-in to change selected cell%28s%29 content to UPPERCASE, lowercase or other common capitalizations. 
 www.aneejian.com</OfficeApplicationDescription>
     <LoadBehavior>3</LoadBehavior>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

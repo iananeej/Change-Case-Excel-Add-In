@@ -264,8 +264,8 @@ img
     }
 .feature .fa
     {
-        background: #28a7e9;
-        border-radius: 50%;
+        /* background: #28a7e9; */
+        /* border-radius: 50%; */
         color: #fff;
         display: inline-block;
         width: 40px;

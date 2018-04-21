@@ -247,6 +247,35 @@ img
     }
 /* end feature */
 
+
+/* start feature */
+.feature
+    {        
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+.feature p
+    {
+        padding-top: 10px;
+    }
+.feature span
+    {
+        float: left;
+    }
+.feature .fa
+    {
+        background: #28a7e9;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 20px;
+    }
+/* end feature */
+
 /* start feature1 */
 #feature1,
 #feature2

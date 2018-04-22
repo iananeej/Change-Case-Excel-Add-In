@@ -308,6 +308,16 @@ img
     }
 /* end feature1 */
 
+#download .fa
+    {
+        text-align: center;
+        margin-right: 20px;
+    }
+.download
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 /* start pricing */
 #pricing
     {

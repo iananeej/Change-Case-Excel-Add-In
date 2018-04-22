@@ -2,7 +2,7 @@
 
 ### Steps to install Change Case Excel Add-In
 
-+ Navigate to the latest [release](/releases/latest) of Change Case Excel Add-In.
++ Navigate to the latest [release](https://github.com/aneejian/Change-Case-Excel-Add-In/releases/latest) of Change Case Excel Add-In.
 
 ### Installing Add-In from EXE file.
 + Download the file.

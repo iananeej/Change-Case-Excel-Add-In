@@ -396,7 +396,7 @@ img
 #github .btn,
 #download .btn
     {
-        margin-top: 20px;
+        margin: 20px;
         padding: 10px 40px 10px 40px;
     }
 /* end download */

@@ -1,5 +1,5 @@
 // preloader
-$(window).load(function(){
+$('#download').load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    
 });
 

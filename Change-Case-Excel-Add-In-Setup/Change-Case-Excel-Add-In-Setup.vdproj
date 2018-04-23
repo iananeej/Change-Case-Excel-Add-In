@@ -40,12 +40,6 @@
         "Entry"
         {
         "MsmKey" = "8:_5D94398FD40C81AF677AA9B435970293"
-        "OwnerKey" = "8:_5C568E3FEF09497CAD690CFA3105FF49"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5D94398FD40C81AF677AA9B435970293"
         "OwnerKey" = "8:_2F8FD28D5AB11F594E8410D08E014FBB"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -53,6 +47,12 @@
         {
         "MsmKey" = "8:_5D94398FD40C81AF677AA9B435970293"
         "OwnerKey" = "8:_FB2FB26D3980AEBFFBA00B395F7E8936"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5D94398FD40C81AF677AA9B435970293"
+        "OwnerKey" = "8:_5C568E3FEF09497CAD690CFA3105FF49"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,12 +94,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2F8FD28D5AB11F594E8410D08E014FBB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_5C568E3FEF09497CAD690CFA3105FF49"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -118,13 +112,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5D94398FD40C81AF677AA9B435970293"
+        "OwnerKey" = "8:_56B0A93CA3E0376C86EF185216616D49"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_56B0A93CA3E0376C86EF185216616D49"
+        "OwnerKey" = "8:_2F8FD28D5AB11F594E8410D08E014FBB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5D94398FD40C81AF677AA9B435970293"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -145,6 +145,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -161,6 +177,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -481,21 +505,21 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Change Case Excel Add-In"
-        "ProductCode" = "8:{64EE74B1-C18D-4ABD-A359-BAB3C3B543DA}"
-        "PackageCode" = "8:{3F896FC8-EBD5-4F46-8AE8-756BBC84C9EF}"
+        "ProductCode" = "8:{970BE4DE-5D1A-4783-AE0C-D763CAD590DE}"
+        "PackageCode" = "8:{80E0A010-5971-4B10-B775-C51377CEF949}"
         "UpgradeCode" = "8:{ADD4CD19-6599-4D1D-BE71-9B7FF1326536}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.0.1"
-        "Manufacturer" = "8:Aneejain"
+        "ProductVersion" = "8:3.0.2"
+        "Manufacturer" = "8:Aneejian"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://aneejian.github.io/Change-Case-Excel-Add-In/"
         "Title" = "8:Change Case Excel Add-In"
         "Subject" = "8:Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells. With easy to use Keyboard shortcuts, perform case conversion in style."
-        "ARPCONTACT" = "8:Aneejain"
+        "ARPCONTACT" = "8:Aneejian"
         "Keywords" = "8:Aneejian, Change Case Excel Addin, Change Case Excel Add-In"
         "ARPCOMMENTS" = "8:Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range or cells. With easy to use Keyboard shortcuts, perform case conversion in style."
         "ARPURLINFOABOUT" = "8:http://www.aneejian.com"

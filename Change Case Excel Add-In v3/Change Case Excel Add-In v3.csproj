@@ -41,7 +41,7 @@
     <PublishUrl>C:\My Files\GitHub\Change-Case-Excel-Add-In\Change Case Excel Add-In v3\publish\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>3.0.0.0</ApplicationVersion>
+    <ApplicationVersion>3.0.0.1</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -300,7 +300,7 @@ www.aneejian.com</OfficeApplicationDescription>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="cs" TemplatesPath="VSTOTemplates" DebugInfoExeName="#Software\Microsoft\Office\15.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x " AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
         <Host Name="Excel" GeneratedCodeNamespace="Change_Case_Excel_Add_In_v3" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="ChangeCase.cs" CanonicalName="AddIn" PublishedHash="4B5DEBD76F92B8D68DD1394C240848BF5950C1BD" CanActivate="false" IconIndex="1" Blueprint="ChangeCase.Designer.xml" GeneratedCode="ChangeCase.Designer.cs" />
+          <HostItem Name="ThisAddIn" Code="ChangeCase.cs" CanonicalName="AddIn" PublishedHash="32F01730FB1714AAFB5E8E9BA75AF574187E6200" CanActivate="false" IconIndex="1" Blueprint="ChangeCase.Designer.xml" GeneratedCode="ChangeCase.Designer.cs" />
         </Host>
       </FlavorProperties>
     </VisualStudio>

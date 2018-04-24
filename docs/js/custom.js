@@ -46,6 +46,6 @@ function testConnection() {
         };
         image.src = "http://youtube.com/favicon.ico";
     } catch (error) {
-        playerFrame.setAttribute('src', source);
+        playerFrame.setAttribute('src', ySource);
     }
 }

@@ -40,11 +40,9 @@ function testConnection() {
         var image = new Image();
         image.onload = function () {
             playerFrame.setAttribute('src', ySource);
-            alert('check done');
         };
         image.onerror = function () {
             playerFrame.setAttribute('src', vSource);
-            alert('check done');
         };
         image.src = "http://youtube.com/favicon.ico";
     } catch (error) {

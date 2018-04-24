@@ -1,7 +1,7 @@
 // preloader
 $(window).load(function(){
-    // $('.preloader').fadeOut(1000); // set duration in brackets 
     testConnection();
+    $('.preloader').fadeOut(1000); // set duration in brackets     
 });
 
 $('#blog').onclick = function () {

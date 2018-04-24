@@ -519,3 +519,8 @@ footer
     max-width: 10em;
     margin: .5em;
 }
+
+#ytplayer {
+    padding-left: 15px;
+    padding-right: 15px;
+}

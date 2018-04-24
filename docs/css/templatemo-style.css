@@ -278,18 +278,21 @@ img
 
 /* start feature1 */
 #feature1,
-#feature2
+#feature2,
+#demo
     {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 #feature1 p,
 #feature1 p,
+#demo p
     {
         padding-top: 10px;
     }
 #feature1 span,
-#feature2 span
+#feature2 span,
+#demo span
     {
         float: left;
     }

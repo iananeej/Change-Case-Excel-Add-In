@@ -19,7 +19,7 @@ $(function () {
     $('.navbar-collapse a').click(function () {
         $(".navbar-collapse").collapse('hide');
     });
-})
+});
 
 function changePage(event) {
     if ($(event.target).hasClass('external')) {
@@ -30,7 +30,7 @@ function changePage(event) {
 }
 $(function () {
     $('.nav li').click(changePage);
-})
+});
 
 function testConnection() {
     var playerFrame = document.getElementById('ytplayer');

@@ -72,8 +72,7 @@ img
 /* end page container */
 
 /* start preloader */
-.preloader,
-.demopreloader
+.preloader
     {
         position: fixed;
         top: 0;

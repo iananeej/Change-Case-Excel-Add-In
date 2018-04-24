@@ -50,9 +50,9 @@ function testConnection() {
             image2.onerror = function () {
                 playerFrame.setAttribute('src', vSource);
             };
-            image2.src = "http://www.youtube-nocookie.com/favicon.ico";
+            image2.src = "https://www.youtube-nocookie.com/favicon.ico";
         };
-        image.src = "http://youtube.com/favicon.ico";
+        image.src = "https://youtube.com/favicon.ico";
     } catch (error) {
         console.log('error');
         playerFrame.setAttribute('src', ySource);

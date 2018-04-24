@@ -35,6 +35,7 @@ $(function () {
 function testConnection() {
     var playerFrame = document.getElementById('ytplayer');
     var ySource = 'https://www.youtube.com/embed/KmaOW4PhuII';
+    var nSource = 'https://www.youtube-nocookie.com/embed/KmaOW4PhuII?rel=0';
     var vSource = 'https://player.vimeo.com/video/265899201';
     try {
         var image = new Image();
@@ -42,9 +43,16 @@ function testConnection() {
             playerFrame.setAttribute('src', ySource);
         };
         image.onerror = function () {
+            var image2 = new Image();
+            image2.onload = function () {
+                playerFrame.setAttribute('src', nSource);
+            };
+            image2.onerror = function () {
             playerFrame.setAttribute('src', vSource);
+            };
         };
         image.src = "http://youtube.com/favicon.ico";
+        image2.src = "http://www.youtube-nocookie.com/favicon.ico";
     } catch (error) {
         playerFrame.setAttribute('src', ySource);
     }

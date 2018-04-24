@@ -34,27 +34,26 @@ $(function () {
 
 function testConnection() {
     var playerFrame = document.getElementById('ytplayer');
-    var ySource = 'https://www.youtube.com/embed/KmaOW4PhuII';
-    var nSource = 'https://www.youtube-nocookie.com/embed/KmaOW4PhuII?rel=0';
-    var vSource = 'https://player.vimeo.com/video/265899201';
+    var youTube = 'https://www.youtube.com/embed/KmaOW4PhuII?rel=0';
+    var youTubeNoCookie = 'https://www.youtube-nocookie.com/embed/KmaOW4PhuII?rel=0';
+    var vimeo = 'https://player.vimeo.com/video/265899201';
     try {
         var image = new Image();
         image.onload = function () {
-            playerFrame.setAttribute('src', ySource);
+            playerFrame.setAttribute('src', youTube);
         };
         image.onerror = function () {
             var image2 = new Image();
             image2.onload = function () {
-                playerFrame.setAttribute('src', nSource);
+                playerFrame.setAttribute('src', youTubeNoCookie);
             };
             image2.onerror = function () {
-                playerFrame.setAttribute('src', vSource);
+                playerFrame.setAttribute('src', vimeo);
             };
             image2.src = "https://www.youtube-nocookie.com/favicon.ico";
         };
         image.src = "https://youtube.com/favicon.ico";
     } catch (error) {
-        console.log('error');
-        playerFrame.setAttribute('src', ySource);
+        playerFrame.setAttribute('src', youTube);
     }
 }

@@ -1,5 +1,5 @@
 // preloader
-$(window).load(function(){
+$(window).load(function () {
     testConnection();
     $('.preloader').fadeOut(1000); // set duration in brackets     
 });
@@ -48,12 +48,13 @@ function testConnection() {
                 playerFrame.setAttribute('src', nSource);
             };
             image2.onerror = function () {
-            playerFrame.setAttribute('src', vSource);
+                playerFrame.setAttribute('src', vSource);
             };
         };
         image.src = "http://youtube.com/favicon.ico";
         image2.src = "http://www.youtube-nocookie.com/favicon.ico";
     } catch (error) {
+        console.log('error');
         playerFrame.setAttribute('src', ySource);
     }
 }

@@ -1,5 +1,5 @@
 // preloader
-$(window).load(function () {
+$(window).ready(function () {
     testConnection();
     $('.preloader').fadeOut(1000); // set duration in brackets     
 });
@@ -11,6 +11,10 @@ $('#blog').onclick = function () {
 $(function () {
     new WOW().init();
     $('.templatemo-nav').singlePageNav({
+        offset: 70
+    });
+
+    $('.head-nav').singlePageNav({
         offset: 70
     });
 

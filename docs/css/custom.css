@@ -13,6 +13,39 @@ body {
 
 /* end body */
 
+/* start media */
+
+/* @media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+} */
+
+@media screen and ( max-width: 991px) {
+    .templatemo-box {
+        margin-bottom: 30px;
+    }
+    .feature img {
+        margin-top: 30px;
+    }
+    .feature img {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and ( max-width: 767px) {
+    .navbar-default .nav li a {
+        height: auto;
+        line-height: 2em;
+    }
+    .feature {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+/* end media */
+
 /* start h1 group */
 
 h1 {
@@ -36,13 +69,18 @@ h4 {
 /* start list style */
 
 ul {
-    /* list-style-type: none; */
+    list-style-type: none;
     padding-bottom: .5em;
 }
 
 li {
-    /* list-style-type: none; */
+    list-style-type: none;
     padding-bottom: .5em;
+}
+
+li>* {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* end list style */
@@ -139,7 +177,7 @@ li {
     background: #28a7e9;
     border-radius: 50%;
     color: #fff;
-    display: inline-block;  
+    display: inline-block;
     /* width: 40px;
     height: 40px; */
     line-height: 40px;

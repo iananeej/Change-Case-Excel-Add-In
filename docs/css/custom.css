@@ -4,7 +4,7 @@ body {
     background: #fff;
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     position: relative;
     width: 100%;
     height: 100%;
@@ -15,11 +15,23 @@ body {
 
 /* start media */
 
-/* @media (min-width: 1200px) {
-    .container {
-        max-width: 1000px;
-    }
-} */
+/* start page container */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+/* end page container */
 
 @media screen and ( max-width: 991px) {
     .templatemo-box {
@@ -104,8 +116,8 @@ li>* {
 }
 
 #navBarMenuItems {
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 #navBarMenuItems a:hover,

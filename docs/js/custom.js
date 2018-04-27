@@ -1,8 +1,12 @@
-// preloader
 $(window).ready(function () {
     testConnection();
+});
+
+// preloader
+$(window).on("load", function () {
     $('.preloader').fadeOut(1000); // set duration in brackets     
 });
+
 
 $('#blog').onclick = function () {
     location.href = "https://www.aneejian.com";

@@ -164,6 +164,15 @@ li>* {
     width: 100%;
 }
 
+#download {
+    background: url('../images/download-bg.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* margin-top: 70px; */
+    /* text-align: center; */
+    width: 100%;
+}
+
 #home p {
     font-weight: 400;
     font-style: italic;

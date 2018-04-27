@@ -30,11 +30,17 @@ function changePage(event) {
         window.location.href = $(event.target).attr('href');
         return;
     }
-    //...
 }
+
 $(function () {
     $('.nav li').click(changePage);
 });
+
+$(function () {
+    $('.nav-link').click(changePage);
+    $('.navbar-brand').click(changePage);
+});
+
 
 function testConnection() {
     var playerFrame = document.getElementById('ytplayer');

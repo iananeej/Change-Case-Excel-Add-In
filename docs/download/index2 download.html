@@ -134,7 +134,7 @@
     </nav>
     <!-- end navigation -->
 
-    <script language="javascript" type="text/javascript">
+    <!-- <script language="javascript" type="text/javascript">
         var releaseUrl = 'https://github.com/aneejian/Change-Case-Excel-Add-In/releases/download/v3.0/';
         var fileName = 'change_case_excel_addin';
         var fileTypes = {
@@ -142,39 +142,44 @@
             zip: releaseUrl + fileName + '.zip',
             rar: releaseUrl + fileName + '.rar'
         }
-    </script>
-    
+    </script> -->
+
     <!-- start download -->
     <section id="download" class="feature">
         <div class="container">
             <div class="row">
                 <div class="col-md wow fadeInLeft" data-wow-delay="0.6s">
                     <h2 class="text-uppercase">Download The Add-In</h2>
-                    <p>Downloaded <span id="totalDownloads"></span>times.</p>
-                    <p>Download the file in '.exe' format.&nbsp;<span class="badge badge-success" style="font-weight: lighter">Recommended</span></p>
-                    <button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.exe">
-                        <i class="fa fa-download"></i> Download .exe</button>
-                        
                     <p>
                         <em>
-                            <small>This is a Win32 Cabinet Self-Extractor file.</small>
+                            <span id="totalDownloads"></span> downloads</em>
+                    </p>
+                    <hr>
+                    <p>Download the installer.&nbsp;
+                        <span class="badge badge-success" style="font-weight: lighter">Recommended</span>
+                    </p>
+                    <button id="exe" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.exe">
+                        <i class="fa fa-download"></i> Download</span>
+                    </button>
+                    <p>
+                        <em>
+                            <small>This is a Win32 Cabinet Self-Extractor file.</small><br>
                         </em>
                     </p>
-                    <hr>    
+                    <hr>
+                    <p>Don't want the installer? Download one of the archive formats.</p>
                     <div class="row">
                         <div class="col wow fadeInLeft" data-wow-delay="0.6s">
-                            <p>Download the file in '.zip' format.</p>
-                            <button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
+                            <button id="zip" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
                                 <i class="fa fa-file-archive"></i> Download .ZIP</button>
                         </div>
-    
+
                         <div class="col wow fadeInLeft" data-wow-delay="0.6s">
-                            <p>Download the file in '.rar' format.</p>
-                            <button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
+                            <button id="rar" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
                                 <i class="fa fa-file-archive"></i> Download .RAR</button>
                         </div>
                     </div>
-    
+
                     <hr>
                     <p>Installing Add-In from Archive files.</p>
                     <p>
@@ -232,6 +237,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../js/jquery.singlePageNav.min.js"></script>
     <script src="../js/custom.js"></script>
+    <script src="../js/downloadstats.js"></script>
 
 </footer>
 <!-- end footer -->

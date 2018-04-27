@@ -3,7 +3,7 @@
 body {
     background: #fff;
     /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.1em;
     position: relative;
     width: 100%;
@@ -188,9 +188,9 @@ li>* {
     padding-top: 10px;
 }
 
-.feature span {
+/* .feature span {
     float: left;
-}
+} */
 
 .feature .fa-dot-circle {
     background: #28a7e9;

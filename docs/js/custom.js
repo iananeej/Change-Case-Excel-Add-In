@@ -1,4 +1,5 @@
 $(window).ready(function () {
+    $('.preloader').fadeOut(1000); // set duration in brackets  
     testConnection();
 });
 
@@ -71,3 +72,19 @@ function testConnection() {
         playerFrame.setAttribute('src', youTube);
     }
 }
+
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.github.com/repos/aneejian/Change-Case-Excel-Add-In/releases",
+    "method": "GET",
+    "headers": {
+        "Cache-Control": "no-cache",
+        "Postman-Token": "35fb24f8-5d22-4c1b-80b0-4f2263f525e6"
+    }
+};
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});

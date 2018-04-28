@@ -70,7 +70,6 @@ $(window).ready(function () {
 
 // Callback function for getting release stats
 function getStats() {
-    console.log('Fetching stats');
     var user = 'aneejian';
     var repository = 'Change-Case-Excel-Add-In';
     var url = apiRoot + "repos/" + user + "/" + repository + "/releases/latest";
@@ -78,11 +77,8 @@ function getStats() {
 }
 
 function setStats(data){
-    console.log(data);
     var releaseAssets = data.assets;
-    console.log(releaseAssets);
     $.each(releaseAssets, function (index, item) {
-        console.log(item);
         getAssetData(item);
     });
     setDownloadLinksAndInfo();
@@ -90,10 +86,9 @@ function setStats(data){
 
 function getAssetData(asset) {
     totalDownloadCount += asset.download_count;
-    console.log(totalDownloadCount);
     var assetData = {
         url: asset.browser_download_url,
-        downloads: asset.downloads,
+        downloads: asset.download_count,
         size: Math.round(asset.size / 1024) + ' KB',
         name: asset.name
     }
@@ -114,9 +109,17 @@ function getAssetData(asset) {
 }
 
 function setDownloadLinksAndInfo() {
-    console.log(totalDownloadCount);
     $('#totalDownloads').text(totalDownloadCount);
+
+    $('#exeName').text(exeData.name);
+    $('#exeDownloads').text(exeData.downloads);
     $('#exe').attr('onclick', "window.location.href='" + exeData.url + "'");
+
+    $('#zipName').text(zipData.name);
+    $('#zipDownloads').text(zipData.downloads);
     $('#zip').attr('onclick', "window.location.href='" + zipData.url + "'");
+
+    $('#rarName').text(rarData.name);
+    $('#rarDownloads').text(rarData.downloads);
     $('#rar').attr('onclick', "window.location.href='" + rarData.url + "'");
 }

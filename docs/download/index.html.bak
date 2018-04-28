@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Change Case Excel Add-In | Aneejian</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Change Case Excel, Add-In, VSTO, Change Case Excel Add-In">
+	<meta name="description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range or cells.">
+
+	<!-- start og tags -->
+	<meta property="og:image" content="https://cdn.rawgit.com/aneejian/Change-Case-Excel-Add-In/master/images/software-img.png">
+	<meta property="og:description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range or cells. With easy to use Keyboard shortcuts, perform case conversion in style.">
+	<meta property="og:url" content="https://github.aneejian.com/Change-Case-Excel-Add-In/">
+	<meta property="og:title" content="Change Case Excel Add-In | Aneejian">
+	<meta property="og:site_name" content="Aneejian">
+	<meta property="og:type" content="article">
+	<!-- end og tags -->
+
+	<meta name="author" content="Aneejian">
+	<meta property="article:publisher" content="https://facebook.com/aneejian">
+	<meta property="article:author" content="https://facebook.com/aneejian">
+
+	<meta property="fb:app_id" content="819231514810191">
+	<meta name="msvalidate.01" content="94E5608D7D22D6BAF20916F1BB5D8531">
+	<meta name="yandex-verification" content="7fd74c581e4fc3dc">
+
+	<!-- animate css -->
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script" rel="stylesheet"> -->
+	<!-- custom css -->
+	<link rel="stylesheet" href="../css/templatemo-style.css">
+
+	<link href="https://www.aneejian.com/favicon.ico" rel="icon" type="image/x-icon">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63183739-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-63183739-1');
+	</script>
+
+	<!-- start WebSite -->
+	<script type='application/ld+json'>
+		{
+			"@context": "https://www.schema.org",
+			"@type": "WebSite",
+			"name": "Aneejian",
+			"alternateName": "Aneejian",
+			"url": "https://www.aneejian.com"
+		}
+	</script>
+	<!-- end WebSite -->
+
+	<!-- start Organization -->
+	<script type='application/ld+json'>
+		{
+			"@context": "https://www.schema.org",
+			"@type": "Organization",
+			"name": "Aneejian",
+			"url": "https://www.aneejian.com",
+			"logo": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+			"image": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+			"description": "Aneejian is a personal blog. Topics of the blog include Robotic Process Automation, Software, Testing, Android, VB.NET, Excel, UFT, HP ALM, Travel and more."
+		}
+	</script>
+	<!-- end Organization -->
+
+</head>
+
+<body>
+	<!-- start preloader -->
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+	</div>
+	<!-- end preloader -->
+	<!-- start navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<!-- <a href="https://www.aneejian.com" class="navbar-brand external" style="font-family: 'Kaushan Script', cursive;"> -->
+				<a id='brandAneejian' class='aneejian-brand external' href="https://www.aneejian.com">
+					<img src="https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotexth.svg">
+				</a>
+				<!-- </a> -->
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right text-uppercase">
+					<li>
+						<a id="backHome" class="external" href="../">HOME</a>
+					</li>
+					<li>
+						<a id="blog" class="external" href="https://www.aneejian.com">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navigation -->
+
+<script language="javascript" type="text/javascript">
+	var releaseUrl = 'https://github.com/aneejian/Change-Case-Excel-Add-In/releases/download/v3.0/';
+	var fileName =  'change_case_excel_addin';
+	var fileTypes = {
+		exe : releaseUrl + fileName + '.exe',
+		zip : releaseUrl + fileName + '.zip',
+		rar : releaseUrl + fileName + '.rar'
+	}
+</script>
+
+	<!-- start download -->
+	<section id="download" class="download stripe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">Download The Add-In</h2>
+
+					<br>
+					<h5>Download the file in '.exe' format.
+						<small class="label label-success"> Recommended </small>
+					</h5>
+
+					<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.exe">
+						<i class="fa fa-download fa-lg"></i> Download .exe</button>
+					<p>
+						<em><small>This is a Win32 Cabinet Self-Extractor file.</small></em>
+					</p>
+					<hr>
+
+					<div class="row">
+						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+							<p>Download the file in '.zip' format.</p>
+							<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
+								<i class="fa fa-file-zip-o fa-lg"></i> Download .ZIP</button>
+						</div>
+						
+						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+							<p>Download the file in '.rar' format.</p>
+							<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
+								<i class="fa fa-file-zip-o fa-lg"></i> Download .RAR</button>
+						</div>
+					</div>
+
+					<hr>
+					<p>Installing Add-In from Archive files.</p>
+					<p>
+						<ul>
+							<li>Extract the archive to a local folder.</li>
+							<li>Run the file named 'Change Case Excel Add-In.exe'.</li>
+							<li>Follow the onscreen instructions.</li>
+							<li>Wait for installation to complete.</li>
+						</ul>
+					</p>
+				</div>
+				<br>
+				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+					<img src="../images/software-img.png" class="img-responsive" alt="feature img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end download -->
+
+	<!-- start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p>Copyright © 2018 Aneejian</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery.singlePageNav.min.js"></script>
+	<script src="../js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Change Case Excel Add-In | Aneejian</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Change Case Excel, Add-In, VSTO, Change Case Excel Add-In">
+	<meta name="description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells.">
+
+	<!-- start og tags -->
+	<meta property="og:image" content="https://cdn.rawgit.com/aneejian/Change-Case-Excel-Add-In/master/docs/images/ogimage.png">
+	<meta property="og:description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells. With easy to use Keyboard shortcuts, perform case conversion in style.">
+	<meta property="og:url" content="https://github.aneejian.com/Change-Case-Excel-Add-In/">
+	<meta property="og:title" content="Change Case Excel Add-In | Aneejian">
+	<meta property="og:site_name" content="Aneejian">
+	<meta property="og:type" content="article">
+	<!-- end og tags -->
+
+	<meta name="author" content="Aneejian">
+	<meta property="article:publisher" content="https://facebook.com/aneejian">
+	<meta property="article:author" content="https://facebook.com/aneejian">
+
+	<meta property="fb:app_id" content="819231514810191">
+	<meta name="msvalidate.01" content="94E5608D7D22D6BAF20916F1BB5D8531">
+	<meta name="yandex-verification" content="7fd74c581e4fc3dc">
+
+
+
+	<!-- animate css -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- google font -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/templatemo-style.css">
+
+	<link href="https://www.aneejian.com/favicon.ico" rel="icon" type="image/x-icon">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63183739-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-63183739-1');
+	</script>
+
+	<!-- start ad code -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-4083103140539495",
+			enable_page_level_ads: true
+		});
+	</script>
+	<!-- end ad code -->
+
+	<!-- start WebSite -->
+	<script type='application/ld+json'>
+		{
+			"@context": "https://www.schema.org",
+			"@type": "WebSite",
+			"name": "Aneejian",
+			"alternateName": "Aneejian",
+			"url": "https://www.aneejian.com"
+		}
+	</script>
+	<!-- end WebSite -->
+
+	<!-- start Organization -->
+	<script type='application/ld+json'>
+		{
+			"@context": "https://www.schema.org",
+			"@type": "Organization",
+			"name": "Aneejian",
+			"url": "https://www.aneejian.com",
+			"logo": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+			"image": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+			"description": "Aneejian is a personal blog. Topics of the blog include Robotic Process Automation, Software, Testing, Android, VB.NET, Excel, UFT, HP ALM, Travel and more."
+		}
+	</script>
+	<!-- end Organization -->
+
+
+</head>
+
+<body>
+	<!-- start preloader -->
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+	</div>
+	<!-- end preloader -->
+	<!-- start navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top templatemo-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<!-- <a href="https://www.aneejian.com" class="navbar-brand" style="font-family: 'Kaushan Script', cursive;">Aneejian</a> -->
+				<a id='brandAneejian' class='aneejian-brand external' href="https://www.aneejian.com">
+					<img src="https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotexth.svg">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right text-uppercase">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#feature">Features</a>
+					</li>
+					<li>
+						<a href="#download">Download</a>
+					</li>
+					<li>
+						<a href="#demo">DEMO</a>
+					</li>
+					<li>
+						<a href="#github">GitHub</a>
+					</li>
+					<li>
+						<a id="blog" class="external" href="https://www.aneejian.com">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navigation -->
+	<!-- start home -->
+	<section id="home">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+						<h1 class="text-upper">Change Case Excel Add-In</h1>
+						<p class="tm-white">
+							Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells. With easy
+							to use Keyboard shortcuts, perform case conversion in style.
+						</p>
+						<img src="images/software-img.png" class="img-responsive" alt="home img">
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end home -->
+
+	<!-- start feature -->
+	<section id="feature">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">Features</h2>
+					<p>Capability to change case of selected cell or range of cells</p>
+					<ul>
+						<li>UPPER CASE</li>
+						<li>lower case</li>
+						<li>Sentence Case</li>
+						<li>Capitalize Each Word</li>
+						<li>tOGGLE cASE</li>
+						<li>aLtErNaTiNg CaSe</li>
+					</ul>
+				</div>
+				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+					<img src="images/context_menu-min.png" class="img-responsive" alt="feature img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end feature -->
+
+	<!-- start feature1 -->
+	<section id="feature" class="stripe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+					<img src="images/keyboard.jpg" class="img-responsive" alt="feature img">
+				</div>
+				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">Keyboard Shortcuts</h2>
+					<p>To easily change the case of selected cells the add-in provides customizable shortcuts keys. Default key combinations
+						are given below
+					</p>
+					<ul>
+						<li>Ctrl + Shift + U for ‘UPPER CASE’</li>
+						<li>Ctrl + Shift + L for ‘lower case’</li>
+						<li>Ctrl + Shift + S for ‘Sentence Case’</li>
+						<li>Ctrl + Shift + C for ‘Capitalize Each Word’</li>
+						<li>Ctrl + Shift + T for ‘tOGGLE cASE’</li>
+						<li>Ctrl + Shift + A for ‘aLtErNaTiNg CaSe’</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end feature1 -->
+
+
+	<!-- start feature -->
+	<section id="feature2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">Customize Shortcuts</h2>
+					<p>Use the settings menu to customize Keyboard Shortcuts or disable it completely.</p>
+					<ul>
+						<li>Open an Excel file</li>
+						<li>Right click on a cell</li>
+						<li>Roll over the 'Change Case' option in the menu</li>
+						<li>Select the option 'Settings'</li>
+						<li>In the settings menu you can change the default shortcuts</li>
+						<li>From the context menu or the settings window you can enable or disable shortcuts</li>
+					</ul>
+				</div>
+				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+					<img src="images/customize.jpg" class="img-responsive" alt="feature img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end feature -->
+
+	<!-- start download -->
+	<section id="download" class="stripe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">Download The Add-In</h2>
+					<p>Visit download page and follow instructions. </p>
+					<button class="btn btn-primary text-uppercase" onclick="window.location.href='download/'">
+						<i class="fa fa-download"></i> Download</button>
+				</div>
+				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+					<img src="images/software-img.png" class="img-responsive" alt="feature img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end download -->
+
+	<!-- start demo -->
+	<section id="demo">
+		<div class="container">
+			<!-- start preloader -->
+			<!-- <div class="demopreloader">
+				<div class="sk-spinner sk-spinner-rotating-plane"></div>
+			</div> -->
+			<!-- end preloader -->
+			<div class="col wow fadeInRight" data-wow-delay="0.6s">
+				<h2 class="text-uppercase">DEMO</h2>
+				<p>See how the add-in works.</p>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/KmaOW4PhuII" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end demo -->
+
+	<!-- start github -->
+	<section id="github" class="stripe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInDown" data-wow-delay="0.6s">
+					<h2 class="text-uppercase">GitHub</h2>
+					<p>See the project source code and files on GitHub. </p>
+					<button class="btn btn-primary text-uppercase" onclick="window.location.href='https://github.com/aneejian/Change-Case-Excel-Add-In'">
+						<i class="fa fa-github"></i> View on GitHub</button>
+				</div>
+				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+					<img src="images/Octocat.png" class="img-responsive" alt="feature img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end github -->
+
+	<!-- start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p>Copyright © 2018 Aneejian</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad9d48f22309d0013d4f009&product=inline-share-buttons'
+	    async='async'></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

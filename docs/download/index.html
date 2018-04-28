@@ -1,199 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Change Case Excel Add-In | Aneejian</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Change Case Excel, Add-In, VSTO, Change Case Excel Add-In">
-	<meta name="description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range or cells.">
+    <meta charset="utf-8">
+    <title>Change Case Excel Add-In | Aneejian</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Change Case Excel, Add-In, VSTO, Change Case Excel Add-In">
+    <meta name="description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells.">
 
-	<!-- start og tags -->
-	<meta property="og:image" content="https://cdn.rawgit.com/aneejian/Change-Case-Excel-Add-In/master/images/software-img.png">
-	<meta property="og:description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range or cells. With easy to use Keyboard shortcuts, perform case conversion in style.">
-	<meta property="og:url" content="https://github.aneejian.com/Change-Case-Excel-Add-In/">
-	<meta property="og:title" content="Change Case Excel Add-In | Aneejian">
-	<meta property="og:site_name" content="Aneejian">
-	<meta property="og:type" content="article">
-	<!-- end og tags -->
+    <!-- start og tags -->
+    <meta property="og:image" content="https://cdn.rawgit.com/aneejian/Change-Case-Excel-Add-In/master/docs/images/ogimage.png">
+    <meta property="og:description" content="Change Case Excel Add-In is a powerful Excel VSTO Add-In that can change case of selected cell or range of cells. With easy to use Keyboard shortcuts, perform case conversion in style.">
+    <meta property="og:url" content="https://github.aneejian.com/Change-Case-Excel-Add-In/">
+    <meta property="og:title" content="Change Case Excel Add-In | Aneejian">
+    <meta property="og:site_name" content="Aneejian">
+    <meta property="og:type" content="article">
+    <!-- end og tags -->
 
-	<meta name="author" content="Aneejian">
-	<meta property="article:publisher" content="https://facebook.com/aneejian">
-	<meta property="article:author" content="https://facebook.com/aneejian">
+    <meta name="author" content="Aneejian">
+    <meta property="article:publisher" content="https://facebook.com/aneejian">
+    <meta property="article:author" content="https://facebook.com/aneejian">
 
-	<meta property="fb:app_id" content="819231514810191">
-	<meta name="msvalidate.01" content="94E5608D7D22D6BAF20916F1BB5D8531">
-	<meta name="yandex-verification" content="7fd74c581e4fc3dc">
+    <meta property="fb:app_id" content="819231514810191">
+    <meta name="msvalidate.01" content="94E5608D7D22D6BAF20916F1BB5D8531">
+    <meta name="yandex-verification" content="7fd74c581e4fc3dc">
 
-	<!-- animate css -->
-	<link rel="stylesheet" href="../css/animate.min.css">
-	<!-- bootstrap css -->
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<!-- font-awesome -->
-	<link rel="stylesheet" href="../css/font-awesome.min.css">
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script" rel="stylesheet"> -->
-	<!-- custom css -->
-	<link rel="stylesheet" href="../css/templatemo-style.css">
+    <!-- favicon -->
+    <link href="https://www.aneejian.com/favicon.ico" rel="icon" type="image/x-icon">
 
-	<link href="https://www.aneejian.com/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63183739-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
 
-		gtag('config', 'UA-63183739-1');
-	</script>
 
-	<!-- start WebSite -->
-	<script type='application/ld+json'>
-		{
-			"@context": "https://www.schema.org",
-			"@type": "WebSite",
-			"name": "Aneejian",
-			"alternateName": "Aneejian",
-			"url": "https://www.aneejian.com"
-		}
-	</script>
-	<!-- end WebSite -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63183739-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	<!-- start Organization -->
-	<script type='application/ld+json'>
-		{
-			"@context": "https://www.schema.org",
-			"@type": "Organization",
-			"name": "Aneejian",
-			"url": "https://www.aneejian.com",
-			"logo": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
-			"image": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
-			"description": "Aneejian is a personal blog. Topics of the blog include Robotic Process Automation, Software, Testing, Android, VB.NET, Excel, UFT, HP ALM, Travel and more."
-		}
-	</script>
-	<!-- end Organization -->
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63183739-1');
+    </script>
+
+    <!-- start ad code -->
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4083103140539495",
+            enable_page_level_ads: true
+        });
+    </script> -->
+    <!-- end ad code -->
+
+    <!-- start WebSite -->
+    <script type='application/ld+json'>
+        {
+            "@context": "https://www.schema.org",
+            "@type": "WebSite",
+            "name": "Aneejian",
+            "alternateName": "Aneejian",
+            "url": "https://www.aneejian.com"
+        }
+    </script>
+    <!-- end WebSite -->
+
+    <!-- start Organization -->
+    <script type='application/ld+json'>
+        {
+            "@context": "https://www.schema.org",
+            "@type": "Organization",
+            "name": "Aneejian",
+            "url": "https://www.aneejian.com",
+            "logo": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+            "image": "https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png",
+            "description": "Aneejian is a personal blog. Topics of the blog include Robotic Process Automation, Software, Testing, Android, VB.NET, Excel, UFT, HP ALM, Travel and more."
+        }
+    </script>
+    <!-- end Organization -->
+
+    <!-- Animate CSS -->
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ad9d48f22309d0013d4f009&product=inline-share-buttons'
+        async='async'></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
 
 </head>
 
 <body>
-	<!-- start preloader -->
-	<div class="preloader">
-		<div class="sk-spinner sk-spinner-rotating-plane"></div>
-	</div>
-	<!-- end preloader -->
-	<!-- start navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<!-- <a href="https://www.aneejian.com" class="navbar-brand external" style="font-family: 'Kaushan Script', cursive;"> -->
-				<a id='brandAneejian' class='aneejian-brand external' href="https://www.aneejian.com">
-					<img src="https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotexth.svg">
-				</a>
-				<!-- </a> -->
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right text-uppercase">
-					<li>
-						<a id="backHome" class="external" href="../">HOME</a>
-					</li>
-					<li>
-						<a id="blog" class="external" href="https://www.aneejian.com">Blog</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- end navigation -->
+    <!-- start preloader -->
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-rotating-plane"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- start navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light head-nav">
+        <div class="container">
+            <a id="brandAneejian" class="navbar-brand" href="#">
+                <img src="https://cdn.rawgit.com/aneejian/BlogCodes/master/logos/logotext.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMenuItems" aria-controls="navBarMenuItems"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navBarMenuItems">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link external" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link" href="#download">Download</a>
+                    <a id="blog" class="nav-item nav-link external" href="https://www.aneejian.com">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
 
-<script language="javascript" type="text/javascript">
-	var releaseUrl = 'https://github.com/aneejian/Change-Case-Excel-Add-In/releases/download/v3.0/';
-	var fileName =  'change_case_excel_addin';
-	var fileTypes = {
-		exe : releaseUrl + fileName + '.exe',
-		zip : releaseUrl + fileName + '.zip',
-		rar : releaseUrl + fileName + '.rar'
-	}
-</script>
+    <!-- <script language="javascript" type="text/javascript">
+        var releaseUrl = 'https://github.com/aneejian/Change-Case-Excel-Add-In/releases/download/v3.0/';
+        var fileName = 'change_case_excel_addin';
+        var fileTypes = {
+            exe: releaseUrl + fileName + '.exe',
+            zip: releaseUrl + fileName + '.zip',
+            rar: releaseUrl + fileName + '.rar'
+        }
+    </script> -->
 
-	<!-- start download -->
-	<section id="download" class="download stripe">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-					<h2 class="text-uppercase">Download The Add-In</h2>
+    <!-- start download -->
+    <!-- <section id="download" class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md wow fadeInLeft" data-wow-delay="0.6s">
+                    <h2 class="text-uppercase">Download The Add-In</h2>
+                    <p>
+                        <em>
+                            <span id="totalDownloads"></span> downloads</em>
+                    </p>
+                    <hr>
+                    <p>Download the installer.&nbsp;
+                        <span class="badge badge-success" style="font-weight: lighter">Recommended</span>
+                    </p>
+                    <button id="exe" class="btn btn-success text-uppercase" onclick="window.location.href=fileTypes.exe">
+                        <i class="fa fa-download"></i> Download</span>
+                    </button>
+                    <p>
+                        <em>
+                            <small>This is a Win32 Cabinet Self-Extractor file.</small>
+                            <br>
+                        </em>
+                    </p>
+                    <hr>
+                    <small>
+                        <p>Don't want the installer? Download one of the archive formats.</p>
+                    </small>
+                    <div class="row">
+                        <div class="col wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom: 1em">
+                            <button id="zip" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
+                                <i class="fa fa-file-archive"></i> Download .ZIP</button>
+                        </div>
 
-					<br>
-					<h5>Download the file in '.exe' format.
-						<small class="label label-success"> Recommended </small>
-					</h5>
+                        <div class="col wow fadeInLeft" data-wow-delay="0.6s">
+                            <button id="rar" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
+                                <i class="fa fa-file-archive"></i> Download .RAR</button>
+                        </div>
+                    </div>
+                    <small>
+                        <br>
+                        <p>Installing Add-In from Archive files.</p>
+                        <ul>
+                            <li>Extract the archive to a local folder.</li>
+                            <li>Run the file named 'Change Case Excel Add-In.exe'.</li>
+                            <li>Follow the onscreen instructions.</li>
+                            <li>Wait for installation to complete.</li>
+                        </ul>
+                    </small>
+                </div>
+                <br>
+                <div class="col-md wow fadeInRight" data-wow-delay="0.6s">
+                    <img src="../images/software-img.png" class="img-fluid" alt="feature img">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end download -->
 
-					<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.exe">
-						<i class="fa fa-download fa-lg"></i> Download .exe</button>
-					<p>
-						<em><small>This is a Win32 Cabinet Self-Extractor file.</small></em>
-					</p>
-					<hr>
 
-					<div class="row">
-						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-							<p>Download the file in '.zip' format.</p>
-							<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
-								<i class="fa fa-file-zip-o fa-lg"></i> Download .ZIP</button>
-						</div>
-						
-						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-							<p>Download the file in '.rar' format.</p>
-							<button class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
-								<i class="fa fa-file-zip-o fa-lg"></i> Download .RAR</button>
-						</div>
-					</div>
+    <!-- start download -->
+    <section id="download" class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-uppercase">Download The Add-In</h2>
+                    <p>
+                        <em>
+                            <span id="totalDownloads"></span> downloads
+                        </em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md wow fadeInLeft" data-wow-delay="0.6s">
+                    <p>Download the installer.&nbsp;
+                        <span class="badge badge-success" style="font-weight: lighter">Recommended</span>
+                    </p>
+                    <button id="exe" class="btn btn-success text-uppercase" onclick="window.location.href=fileTypes.exe">
+                        <i class="fa fa-download"></i> Download</span>
+                    </button>
+                    <small>
+                        <p>
+                            <em>
+                                Win32 Cabinet Self-Extractor
+                                <br>
+                                <span id="exeName"></span>
+                                <br>
+                                <span id="exeDownloads"></span> downloads
+                                <br>
+                            </em>
+                        </p>
+                    </small>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <p>Installing Add-In from installer.</p>
+                            <ul>
+                                <li>Run the instller.</li>
+                                <li>Follow the onscreen instructions.</li>
+                                <li>Wait for installation to complete.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md wow fadeInRight" data-wow-delay="0.6s">
+                    <p>Don't want the installer? Download one of the archive formats.</p>
+                    <div class="row">
+                        <div class="col wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom: 1em">
+                            <button id="zip" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.zip">
+                                <i class="fa fa-file-archive"></i> Download .ZIP</button>
+                            <small>
+                                <p>
+                                    <em>
+                                        ZIP archive
+                                        <br>
+                                        <span id="zipName"></span>
+                                        <br>
+                                        <span id="zipDownloads"></span> downloads
+                                        <br>
+                                    </em>
+                                </p>
+                            </small>
+                        </div>
+                        <div class="col wow fadeInLeft" data-wow-delay="0.6s">
+                            <button id="rar" class="btn btn-primary text-uppercase" onclick="window.location.href=fileTypes.rar">
+                                <i class="fa fa-file-archive"></i> Download .RAR</button>
+                            <small>
+                                <p>
+                                    <em>
+                                        RAR archive
+                                        <br>
+                                        <span id="rarName"></span>
+                                        <br>
+                                        <span id="rarDownloads"></span> downloads
+                                        <br>
+                                    </em>
+                                </p>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Installing Add-In from Archive files.</p>
+                            <ul>
+                                <li>Extract the archive to a local folder.</li>
+                                <li>Run the file named 'Change Case Excel Add-In.exe'.</li>
+                                <li>Follow the onscreen instructions.</li>
+                                <li>Wait for installation to complete.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end download -->
 
-					<hr>
-					<p>Installing Add-In from Archive files.</p>
-					<p>
-						<ul>
-							<li>Extract the archive to a local folder.</li>
-							<li>Run the file named 'Change Case Excel Add-In.exe'.</li>
-							<li>Follow the onscreen instructions.</li>
-							<li>Wait for installation to complete.</li>
-						</ul>
-					</p>
-				</div>
-				<br>
-				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
-					<img src="../images/software-img.png" class="img-responsive" alt="feature img">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end download -->
+    <!-- start demo -->
+            <!-- <section id="demo" class="feature stripe">
+                <div class="container">
+                    <div class="col" data-wow-delay="0.6s">
+                        <h2 class="text-uppercase">DEMO</h2>
+                        <p>See how the add-in works.</p>
+                        <div class="embed-responsive embed-responsive-16by9 wow zoomIn">
+                            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/KmaOW4PhuII" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+    <!-- end demo -->
 
-	<!-- start footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<p>Copyright © 2018 Aneejian</p>
-			</div>
-		</div>
-	</footer>
-	<!-- end footer -->
 
-	<script src="../js/jquery.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/wow.min.js"></script>
-	<script src="../js/jquery.singlePageNav.min.js"></script>
-	<script src="../js/custom.js"></script>
 </body>
+
+<!-- start footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <p class="col-centered">Copyright © 2018 Aneejian</p>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/downloadstats.js"></script>
+
+</footer>
+<!-- end footer -->
 
 </html>

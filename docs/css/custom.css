@@ -3,7 +3,7 @@
 body {
     background: #fff;
     /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 1.1em;
     position: relative;
     width: 100%;
@@ -165,7 +165,8 @@ li>* {
 }
 
 #download {
-    background: url('../images/download-bg.jpg') no-repeat;
+    /* background: url('../images/download-bg.jpg') no-repeat; */
+    background: darkslategrey;
     background-size: cover;
     color: #fff;
     /* margin-top: 70px; */

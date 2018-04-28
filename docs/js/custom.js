@@ -1,6 +1,8 @@
 $(window).ready(function () {
     // $('.preloader').fadeOut(1000); // set duration in brackets  
-    testConnection();
+    if ($(selector).length) {
+        testYouTubeConnection();
+    }
 });
 
 // preloader
@@ -47,7 +49,7 @@ $(function () {
 });
 
 
-function testConnection() {
+function testYouTubeConnection() {
     var playerFrame = document.getElementById('ytplayer');
     var youTube = 'https://www.youtube.com/embed/KmaOW4PhuII?rel=0';
     var youTubeNoCookie = 'https://www.youtube-nocookie.com/embed/KmaOW4PhuII?rel=0';

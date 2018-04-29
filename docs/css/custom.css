@@ -148,7 +148,9 @@ li>* {
 }
 
 .stripe {
-    background: #f8f8f8;
+    /* background: #f8f8f8; */
+    background: darkslategrey;
+    color: white;
 }
 
 /* over lay */
@@ -164,14 +166,18 @@ li>* {
     width: 100%;
 }
 
+.carousel-item img {
+  max-width: 100% !important;
+}
+
 #download {
     /* background: url('../images/download-bg.jpg') no-repeat; */
-    background: darkslategrey;
-    background-size: cover;
-    color: #fff;
+    /* background: darkslategrey; */
+    /* background-size: cover; */
+    /* color: #fff; */
     /* margin-top: 70px; */
     /* text-align: center; */
-    width: 100%;
+    /* width: 100%; */
 }
 
 #home p {

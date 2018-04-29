@@ -4,6 +4,8 @@ Change Case Excel Add-In is a simple tool that can help you in changing case of 
 
 ![Context Menu][context_menu]
 
+## [See how the add-in works (Demo Video)](https://github.aneejian.com/Change-Case-Excel-Add-In/#demo)
+
 ## Installing the Add-In
 
 #### [Download the latest release](https://github.aneejian.com/Change-Case-Excel-Add-In/#download)

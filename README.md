@@ -73,7 +73,10 @@ Use the settings menu to customize Keyboard Shortcuts or disable it completely.
 
 ## Uninstalling
 
-You can uninstall the Add-In from 'Add or Remove Programs' options available from control panel. While uninstalling, make sure that all Excel files are closed.
++ Navigate to Programs and Features (Control Panel\Programs\Programs and Features).
++ Find 'Change Case Excel Add-In' from the list which has publisher as 'Aneejian'.
++ Click uninstall.
+
 
 [context_menu]: docs/images/context_menu-min.png "Context Menu"
 [home_tab]: docs/images/home_tab-min.png "Change Case Option in Home Tab of Excel Ribbon"

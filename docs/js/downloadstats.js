@@ -6,7 +6,7 @@ var fileTypes = {
     exe: releaseUrl + fileName + '.exe',
     zip: releaseUrl + fileName + '.zip',
     rar: releaseUrl + fileName + '.rar'
-}
+};
 
 var totalDownloadCount = 0;
 var exeData = {
@@ -14,19 +14,20 @@ var exeData = {
     downloads: 50,
     size: '961 KB',
     name: fileName + '.exe'
-}
+};
+
 var zipData = {
     url: fileTypes.zip,
     downloads: 50,
     size: '905 KB',
     name: fileName + '.zip'
-}
+};
 var rarData = {
     url: fileTypes.rar,
     downloads: 50,
     size: '853 KB',
     name: fileName + '.rar'
-}
+};
 
 // setAssetData();
 
@@ -91,7 +92,7 @@ function getAssetData(asset) {
         downloads: asset.download_count,
         size: Math.round(asset.size / 1024) + ' KB',
         name: asset.name
-    }
+    };
     var extension = assetData.name.split('.').pop();
     switch (extension) {
         case 'exe':

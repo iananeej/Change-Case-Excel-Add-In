@@ -1,5 +1,9 @@
+setInterval(function () 
+{ 
+    $('.preloader').fadeOut(1000);
+}, 15000);
+
 $(window).ready(function () {
-    $('.preloader').fadeOut(15000); // set duration in brackets  
     if ($('#ytplayer').length) {
         testYouTubeConnection();
     }

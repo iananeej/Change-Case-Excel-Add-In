@@ -1,7 +1,7 @@
-setInterval(function () 
-{ 
+setInterval(removePreloader, 15000);
+function removePreloader(params) {
     $('.preloader').fadeOut(1000);
-}, 15000);
+}
 
 $(window).ready(function () {
     if ($('#ytplayer').length) {

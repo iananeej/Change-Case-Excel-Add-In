@@ -79,6 +79,7 @@ function testYouTubeConnection() {
         image.src = "https://youtube.com/favicon.ico";
     } catch (error) {
         playerFrame.setAttribute('src', youTube);
+        console.error();
     }
 }
 

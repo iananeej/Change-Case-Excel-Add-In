@@ -1,4 +1,4 @@
-setInterval(removePreloader, 15000);
+setInterval(removePreloader, 10000);
 function removePreloader(params) {
     $('.preloader').fadeOut(1000);
 }
@@ -62,14 +62,17 @@ function testYouTubeConnection() {
         var image = new Image();
         image.onload = function () {
             playerFrame.setAttribute('src', youTube);
+            console.log('youtube');
         };
         image.onerror = function () {
             var image2 = new Image();
             image2.onload = function () {
                 playerFrame.setAttribute('src', youTubeNoCookie);
+                console.log('youtube cookie');
             };
             image2.onerror = function () {
                 playerFrame.setAttribute('src', vimeo);
+                console.log('vimeo');
             };
             image2.src = "https://www.youtube-nocookie.com/favicon.ico";
         };

@@ -3,14 +3,20 @@ function removePreloader(params) {
     $('.preloader').fadeOut(1000);
 }
 
-$(window).ready(function () {
+$(window).ready(function () {    
     if ($('#ytplayer').length) {
         testYouTubeConnection();
     }
 });
 
 // preloader
-$(window).on("load", function () {
+// $('#github').load(function () {
+//     console.log('github loaded');
+//     $('.preloader').fadeOut(1000);
+// });
+
+// preloader
+$(window).on('load', function () {
     $('.preloader').fadeOut(1000); // set duration in brackets     
 });
 
@@ -54,47 +60,28 @@ $(function () {
 
 
 function testYouTubeConnection() {
-    var playerFrame = document.getElementById('ytplayer');
+    var playerFrame = $('#ytplayer');
     var youTube = 'https://www.youtube.com/embed/KmaOW4PhuII?rel=0';
     var youTubeNoCookie = 'https://www.youtube-nocookie.com/embed/KmaOW4PhuII?rel=0';
     var vimeo = 'https://player.vimeo.com/video/265899201';
+    playerFrame.attr('src', vimeo);
     try {
         var image = new Image();
         image.onload = function () {
-            playerFrame.setAttribute('src', youTube);
-            console.log('youtube');
+            playerFrame.attr('src', youTube);
         };
         image.onerror = function () {
             var image2 = new Image();
             image2.onload = function () {
-                playerFrame.setAttribute('src', youTubeNoCookie);
-                console.log('youtube cookie');
+                playerFrame.attr('src', youTubeNoCookie);
             };
             image2.onerror = function () {
-                playerFrame.setAttribute('src', vimeo);
-                console.log('vimeo');
+                playerFrame.attr('src', vimeo);
             };
             image2.src = "https://www.youtube-nocookie.com/favicon.ico";
         };
         image.src = "https://youtube.com/favicon.ico";
     } catch (error) {
-        playerFrame.setAttribute('src', youTube);
-        console.error();
+        playerFrame.attr('src', vimeo);
     }
 }
-
-
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://api.github.com/repos/aneejian/Change-Case-Excel-Add-In/releases",
-    "method": "GET",
-    "headers": {
-        "Cache-Control": "no-cache",
-        "Postman-Token": "35fb24f8-5d22-4c1b-80b0-4f2263f525e6"
-    }
-};
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});

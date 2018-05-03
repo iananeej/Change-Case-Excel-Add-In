@@ -15,7 +15,7 @@ function getQueryVariable(variable) {
 
 // Format numbers
 function formatNumber(value) {
-    return value.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')
+    return value.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
 }
 
 // Validate the user input

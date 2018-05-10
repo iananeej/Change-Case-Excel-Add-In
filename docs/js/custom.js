@@ -4,7 +4,7 @@ function removePreloader(params) {
 }
 
 $(window).ready(function () {    
-    $("[class*='col']").addClass("align-self-center");
+    $('.col-md').addClass('align-self-center');
     if ($('#ytplayer').length) {
         testYouTubeConnection();
     }
